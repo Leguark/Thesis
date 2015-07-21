@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?driver version="2.0.0"?>
-<!--Composed by Intrepid GeoModeller 2014 v3.3.0 geomodeller_2014 for Windows (x64) by PELAGIAN optimised build b8c286f00ab4, Jun  1 2015-->
+<!--Composed by Intrepid GeoModeller 2014 v3.3.0 geomodeller_2014 for Windows (x64) by PELAGIAN optimised build 84449d91e0cb, Jun  1 2015-->
 <geo:Project3DEdit xmlns:geo="http://www.geomodeller.com/geo" xmlns:gml="http://www.opengis.net/gml" author="flo" CoordSystem="local" date=" 6/ 8/2013 14: 4:11" deflection2d="0.001" deflection3d="1.0E-4" description="Simple graben model to test uncertainty simulations" discretisation="1000000.0" precision="1.0" projectName="Simple Graben" unit="M" version="2.0">
   <geo:Extent3DOfProject>
     <geo:ExtentBox3D>
@@ -257,140 +257,6 @@
   </geo:Faults>
   <geo:Sections>
     <geo:Section Name="Section1" IsAxialSurface="false">
-      <geo:OutputGraphicalData>
-        <geo:FormationBoundaryList>
-          <geo:Data Name="Form1"/>
-          <gml:MultiLineString srsName="localSectionSystem">
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">998.000,-650.000 977.633,-650.000 957.265,-650.000 936.898,-650 916.531,-650 896.163,-650 875.796,-650 855.429,-650 835.061,-650 814.694,-650 794.327,-650 773.959,-650 753.592,-650 733.224,-650 712.857,-650 692.490,-650 687.792,-650 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">0,-650.000 20.367,-650.000 40.735,-650.000 61.102,-650.000 81.469,-650.000 101.837,-650.000 122.204,-650.000 142.571,-650.000 162.939,-650.000 183.306,-650.000 203.673,-650.000 224.041,-650.000 244.408,-650.000 264.776,-650.000 285.143,-650.000 305.510,-650.000 312.208,-650.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">342.577,-850.000 346.245,-850.000 366.612,-850.000 386.980,-850 407.347,-850 427.714,-850 448.082,-850 468.449,-850 488.816,-850 509.184,-850 529.551,-850 549.918,-850 570.286,-850 590.653,-850 611.020,-850 631.388,-850 651.755,-850.000 657.423,-850.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-          </gml:MultiLineString>
-          <geo:Data Name="Form2"/>
-          <gml:MultiLineString srsName="localSectionSystem">
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">998.000,-500.000 977.633,-500.000 957.265,-500.000 936.898,-500.000 916.531,-500.000 896.163,-500.000 875.796,-500.000 855.429,-500.000 835.061,-500.000 814.694,-500.000 794.327,-500.000 773.959,-500.000 753.592,-500.000 733.224,-500 712.857,-500 710.232,-500 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">0,-500.000 20.367,-500.000 40.735,-500.000 61.102,-500.000 81.469,-500.000 101.837,-500.000 122.204,-500.000 142.571,-500.000 162.939,-500.000 183.306,-500.000 203.673,-500.000 224.041,-500.000 244.408,-500.000 264.776,-500.000 285.143,-500.000 289.769,-500.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">319.829,-700 325.878,-700 346.245,-700 366.612,-700.000 386.980,-700.000 407.347,-700.000 427.714,-700.000 448.082,-700.000 468.449,-700.000 488.816,-700.000 509.184,-700.000 529.551,-700.000 549.918,-700.000 570.286,-700.000 590.653,-700.000 611.020,-700.000 631.388,-700.000 651.755,-700.000 672.122,-700.000 680.171,-700.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-          </gml:MultiLineString>
-          <geo:Data Name="Form3"/>
-          <gml:MultiLineString srsName="localSectionSystem">
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">998.000,-350.000 977.633,-350.000 957.265,-350.000 936.898,-350.000 916.531,-350 896.163,-350 875.796,-350 855.429,-350 835.061,-350 814.694,-350 794.327,-350 773.959,-350 753.592,-350 733.224,-350 731.263,-350 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">0,-350.000 20.367,-350.000 40.735,-350.000 61.102,-350.000 81.469,-350.000 101.837,-350.000 122.204,-350.000 142.571,-350.000 162.939,-350.000 183.306,-350.000 203.673,-350 224.041,-350 244.408,-350 264.776,-350 268.738,-350 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">297.138,-550 305.510,-550 325.878,-550 346.245,-550 366.612,-550 386.980,-550 407.347,-550 427.714,-550 448.082,-550 468.449,-550 488.816,-550 509.184,-550 529.551,-550 549.918,-550 570.286,-550 590.653,-550 611.020,-550.000 631.388,-550.000 651.755,-550.000 672.122,-550.000 692.490,-550.000 702.861,-550.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-          </gml:MultiLineString>
-          <geo:Data Name="Fault_L"/>
-          <gml:MultiLineString srsName="localSectionSystem">
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">364.420,-1000 361.525,-979.592 358.604,-959.184 355.660,-938.776 352.691,-918.367 349.699,-897.959 346.684,-877.551 346.245,-874.602 343.646,-857.143 342.577,-850.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">342.577,-850.000 340.591,-836.735 337.519,-816.327 334.434,-795.918 331.338,-775.510 328.234,-755.102 325.878,-739.644 325.123,-734.694 322.009,-714.286 319.829,-700 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">319.829,-700 318.894,-693.878 315.781,-673.469 312.673,-653.061 312.208,-650.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">312.208,-650.000 309.571,-632.653 306.480,-612.245 305.510,-605.822 303.400,-591.837 300.336,-571.429 297.290,-551.020 297.138,-550 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">297.138,-550 294.263,-530.612 291.259,-510.204 289.769,-500.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">289.769,-500.000 288.279,-489.796 285.326,-469.388 285.143,-468.106 282.406,-448.980 279.517,-428.571 276.662,-408.163 273.845,-387.755 271.065,-367.347 268.738,-350 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">268.738,-350 268.327,-346.939 265.632,-326.531 264.776,-319.938 262.983,-306.122 260.382,-285.714 257.829,-265.306 255.326,-244.898 252.875,-224.490 250.476,-204.082 248.130,-183.673 245.837,-163.265 244.408,-150.260 243.596,-142.857 241.405,-122.449 239.260,-102.041 237.159,-81.633 235.096,-61.224 233.068,-40.816 231.070,-20.408 229.194,-1.006 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-          </gml:MultiLineString>
-          <geo:Data Name="Fault_R"/>
-          <gml:MultiLineString srsName="localSectionSystem">
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">635.580,-1000 638.476,-979.592 641.396,-959.184 644.340,-938.776 647.309,-918.367 650.301,-897.959 651.755,-888.114 653.317,-877.551 656.354,-857.143 657.423,-850.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">657.423,-850.000 659.409,-836.735 662.481,-816.327 665.566,-795.918 668.662,-775.510 671.766,-755.102 672.122,-752.766 674.877,-734.694 677.991,-714.286 680.171,-700.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">680.171,-700.000 681.106,-693.878 684.219,-673.469 687.327,-653.061 687.792,-650 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">687.792,-650 690.429,-632.653 692.490,-619.049 693.520,-612.245 696.599,-591.837 699.663,-571.429 702.710,-551.020 702.861,-550.000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">702.861,-550.000 705.737,-530.612 708.742,-510.204 710.232,-500 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">710.232,-500 711.722,-489.796 712.857,-481.947 714.673,-469.388 717.594,-448.980 720.483,-428.571 723.338,-408.163 726.156,-387.755 728.935,-367.347 731.263,-350 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">731.263,-350 731.673,-346.939 733.224,-335.197 734.368,-326.531 737.016,-306.122 739.618,-285.714 742.171,-265.306 744.674,-244.898 747.126,-224.490 749.525,-204.082 751.871,-183.673 753.592,-168.358 754.163,-163.265 756.403,-142.857 758.594,-122.449 760.739,-102.041 762.841,-81.633 764.904,-61.224 766.932,-40.816 768.930,-20.408 770.807,-1.006 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-          </gml:MultiLineString>
-        </geo:FormationBoundaryList>
-      </geo:OutputGraphicalData>
       <geo:Structural2DData>
         <geo:Interfaces>
           <geo:Interface ObservationID="fault_right_base">
@@ -511,26 +377,6 @@
       </geo:Intersections>
     </geo:Section>
     <geo:Section Name="SurfaceTopography" Description="Topography of the model." IsAxialSurface="false" IsTopography="true">
-      <geo:OutputGraphicalData>
-        <geo:FormationBoundaryList>
-          <geo:Data Name="Fault_L"/>
-          <gml:MultiLineString srsName="localSectionSystem">
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">233.072,0 232.895,20.408 232.719,40.816 232.544,61.224 232.371,81.633 232.201,102.041 232.033,122.449 231.869,142.857 231.709,163.265 231.554,183.673 231.404,204.082 231.259,224.490 231.121,244.898 230.990,265.306 230.867,285.714 230.752,306.122 230.646,326.531 230.550,346.939 230.464,367.347 230.389,387.755 230.325,408.163 230.273,428.571 230.234,448.980 230.208,469.388 230.195,489.796 230.195,510.204 230.208,530.612 230.234,551.020 230.273,571.429 230.325,591.837 230.389,612.245 230.464,632.653 230.550,653.061 230.646,673.469 230.752,693.878 230.867,714.286 230.990,734.694 231.121,755.102 231.259,775.510 231.404,795.918 231.554,816.327 231.709,836.735 231.869,857.143 232.033,877.551 232.201,897.959 232.371,918.367 232.544,938.776 232.719,959.184 232.895,979.592 233.072,1000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-          </gml:MultiLineString>
-          <geo:Data Name="Fault_R"/>
-          <gml:MultiLineString srsName="localSectionSystem">
-            <gml:lineStringMember>
-              <gml:LineString>
-                <gml:coordinates cs="," decimal="." ts=" ">768.928,0 769.105,20.408 769.281,40.816 769.456,61.224 769.629,81.633 769.799,102.041 769.967,122.449 770.131,142.857 770.291,163.265 770.446,183.673 770.597,204.082 770.741,224.490 770.879,244.898 771.010,265.306 771.133,285.714 771.248,306.122 771.354,326.531 771.451,346.939 771.537,367.347 771.612,387.755 771.675,408.163 771.727,428.571 771.766,448.980 771.793,469.388 771.806,489.796 771.806,510.204 771.793,530.612 771.766,551.020 771.727,571.429 771.675,591.837 771.612,612.245 771.537,632.653 771.451,653.061 771.354,673.469 771.248,693.878 771.133,714.286 771.010,734.694 770.879,755.102 770.741,775.510 770.597,795.918 770.446,816.327 770.291,836.735 770.131,857.143 769.967,877.551 769.799,897.959 769.629,918.367 769.456,938.776 769.281,959.184 769.105,979.592 768.928,1000 </gml:coordinates>
-              </gml:LineString>
-            </gml:lineStringMember>
-          </gml:MultiLineString>
-        </geo:FormationBoundaryList>
-      </geo:OutputGraphicalData>
       <geo:Shape3DOfSection FileName="SurfaceTopography.sec"/>
       <geo:Graphic LINE_TYPE="0" LINE_WIDTH="1.0" MARKER_SYMBOL="3" MARKER_SYMBOL_SIZE="1" MARKER_SYMBOL_SIZE_DEC="1" ORIENTATION_SCALE="5.0" SURFACE_CONTOUR_DENSITY_U="50" SURFACE_CONTOUR_DENSITY_V="50" SURFACE_RENDERING_MODE="0" SURFACE_TEXTURE_EFFECT="6" SURFACE_TRANSPARENCY="0.0">
         <geo:ColorShading Blue="0" Green="0" Red="255"/>
@@ -823,20 +669,6 @@
     <geo:ModelStratigraphicColumn>
       <geo:Data Name="Form1_Series"/>
     </geo:ModelStratigraphicColumn>
-    <geo:OutputShape3DOfFormations>
-      <geo:Data Name="_dfa_Model_DefaultCover"/>
-      <geo:Shape3DOfFormation FileName="_dfa_Model_DefaultCover.s3d"/>
-      <geo:Data Name="_dfa_Model_Form1"/>
-      <geo:Shape3DOfFormation FileName="_dfa_Model_Form1.s3d"/>
-      <geo:Data Name="_dfa_Model_Form2"/>
-      <geo:Shape3DOfFormation FileName="_dfa_Model_Form2.s3d"/>
-      <geo:Data Name="_dfa_Model_Form3"/>
-      <geo:Shape3DOfFormation FileName="_dfa_Model_Form3.s3d"/>
-      <geo:Data Name="_dfa_Surface_Fault_L"/>
-      <geo:Shape3DOfFormation FileName="_dfa_Surface_Fault_L.s3d"/>
-      <geo:Data Name="_dfa_Surface_Fault_R"/>
-      <geo:Shape3DOfFormation FileName="_dfa_Surface_Fault_R.s3d"/>
-    </geo:OutputShape3DOfFormations>
   </geo:GeologicalModel>
   <geo:ProvenanceGroup>
     <geo:Provenance id="Unspecified" rank="0"/>

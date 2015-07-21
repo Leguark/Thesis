@@ -1,0 +1,28 @@
+digraph G {
+faults_limits [shape=box];
+fault_e_dip;
+fault_e_dip -> faults_limits  [label=fault_e_dip];
+fault_w_dip;
+fault_w_dip -> faults_limits  [label=fault_w_dip];
+thickness_layer1;
+thickness_layer2;
+alpha;
+offset;
+obs [style=filled];
+alpha -> obs  [label=mu];
+beta [shape=invtriangle];
+alpha -> beta  [label=alpha];
+thickness_layer1 -> beta  [label=thickness_layer1];
+gamma [shape=invtriangle];
+beta -> gamma  [label=beta];
+thickness_layer2 -> gamma  [label=thickness_layer2];
+offset_negative_constraint [shape=box];
+offset -> offset_negative_constraint  [label=offset];
+offset_below_faults_constraint [shape=box];
+fault_e_dip -> offset_below_faults_constraint  [label=fault_e_dip];
+beta -> offset_below_faults_constraint  [label=beta];
+fault_w_dip -> offset_below_faults_constraint  [label=fault_w_dip];
+gamma -> offset_below_faults_constraint  [label=gamma];
+offset -> offset_below_faults_constraint  [label=offset];
+layer_dip;
+}

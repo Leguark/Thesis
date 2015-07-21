@@ -1,0 +1,51 @@
+<com.geomodeller.ui.dialogs.LutConfigurator id="1">
+  <data id="2">
+    <data id="3">
+      <lut>C:\Users\Miguel\workspace\Geomodeller\miguel\models\Simple_Graben_3\luts\Model_Grid_3D##Current_Model_Grid.lutconfig\Model_Grid_3D##Current_Model_Grid</lut>
+      <file>C:\Users\Miguel\workspace\Geomodeller\miguel\models\Simple_Graben_3\luts\Model_Grid_3D##Current_Model_Grid.lutconfig\Model_Grid_3D##Current_Model_Grid</file>
+      <builder class="com.geomodeller.ui.dialogs.ModelPileBuilder" id="4">
+        <points id="5">
+          <com.dfa.apps.gravitas.plugin.visual3d.lut.VC id="6">
+            <v>1.0</v>
+            <cix>0</cix>
+            <user>true</user>
+            <current>false</current>
+          </com.dfa.apps.gravitas.plugin.visual3d.lut.VC>
+          <com.dfa.apps.gravitas.plugin.visual3d.lut.VC id="7">
+            <v>2.0</v>
+            <cix>1</cix>
+            <user>true</user>
+            <current>false</current>
+          </com.dfa.apps.gravitas.plugin.visual3d.lut.VC>
+          <com.dfa.apps.gravitas.plugin.visual3d.lut.VC id="8">
+            <v>3.0</v>
+            <cix>2</cix>
+            <user>true</user>
+            <current>false</current>
+          </com.dfa.apps.gravitas.plugin.visual3d.lut.VC>
+          <com.dfa.apps.gravitas.plugin.visual3d.lut.VC id="9">
+            <v>4.0</v>
+            <cix>3</cix>
+            <user>true</user>
+            <current>false</current>
+          </com.dfa.apps.gravitas.plugin.visual3d.lut.VC>
+        </points>
+        <selected>0</selected>
+        <myname>Model_Grid_3D##Current_Model_Grid</myname>
+      </builder>
+      <available class="linked-hash-set" id="10">
+        <com.geomodeller.ui.dialogs.ModelPileBuilder reference="4"/>
+      </available>
+      <dataclip id="11">
+        <min>1.0</min>
+        <max>4.0</max>
+        <undefined>false</undefined>
+      </dataclip>
+      <visualclip id="12">
+        <min>1.0</min>
+        <max>4.0</max>
+        <undefined>false</undefined>
+      </visualclip>
+    </data>
+  </data>
+</com.geomodeller.ui.dialogs.LutConfigurator>

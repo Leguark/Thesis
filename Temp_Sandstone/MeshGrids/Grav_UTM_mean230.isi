@@ -1,0 +1,50 @@
+MetaData Begin
+	Name	= Grav_UTM_mean230.igmesh
+	Version	= "Intrepid GeoModeller v6.0.0 geomodeller_2014 for Windows (x64) by PELAGIAN optimised build 84449d91e0cb "
+	quad_Grav_UTM_mean230 Begin
+		DataType	= IEEE4ByteReal
+		ByteOrder	= LSBFirst
+		Primitive	= quad
+		Alias	= none
+		Units	= "none"
+	quad_Grav_UTM_mean230 End
+	MeshGrid Begin
+		Type	= regular-grid
+		Dimensions	= 2
+		Purpose	= MODEL
+		Description	= no description
+		Suffix	= .ers
+		Format	= iogrid
+		Name	= Grav_UTM_mean230
+		GridExtents = {
+			            122
+			            207
+			              1
+}
+		Origin = {
+			  695784.000000
+			 6862864.000000
+			              0
+}
+		Spacing = {
+			     424.000000
+			     424.000000
+			              0
+}
+		BasisX = {
+			       1.000000
+			              0
+			              0
+}
+		BasisY = {
+			              0
+			       1.000000
+			              0
+}
+		BasisZ = {
+			              0
+			              0
+			       1.000000
+}
+	MeshGrid End
+MetaData End

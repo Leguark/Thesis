@@ -1,0 +1,13 @@
+MetaData Begin
+	Name	= Grav_UTM_mean230.ers
+	Version	= "Intrepid 3D GeoModeller v2.1.0 geomodeller_2013 for Windows (x64) by PELAGIAN optimised build 2645577ab195 "
+	Grav_UTM_mean230 Begin
+		GroupBy	= no
+		DataType	= IEEE4ByteReal
+		ByteOrder	= LSBFirst
+		Primitive	= quad
+		Alias	= none
+		Bands	= 1
+		Units	= "none"
+	Grav_UTM_mean230 End
+MetaData End

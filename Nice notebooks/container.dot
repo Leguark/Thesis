@@ -1,0 +1,11 @@
+digraph G {
+beta [shape=invtriangle];
+alpha;
+alpha -> beta  [label=alpha];
+thickness_layer1;
+thickness_layer1 -> beta  [label=thickness_layer1];
+gamma [shape=invtriangle];
+beta -> gamma  [label=beta];
+thickness_layer2;
+thickness_layer2 -> gamma  [label=thickness_layer2];
+}

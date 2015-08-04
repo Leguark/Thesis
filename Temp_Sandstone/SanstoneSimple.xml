@@ -385,7 +385,7 @@
               </gml:Point>
             </geo:FoliationObservation>
           </geo:Foliation>
-          <geo:Foliation ObservationID="SM_Ately_Ori_C">
+          <geo:Foliation ObservationID="SM_Atley_Ori_C">
             <geo:Data Name="SimpleMafic"/>
             <geo:FoliationObservation Azimuth="10.0" Dip="20.0" NormalPolarity="true">
               <gml:Point>
@@ -2896,7 +2896,7 @@
       <geo:Series isUptodate="false" name="Murchison_Series" relation="2">
         <geo:Data Name="Murchison"/>
       </geo:Series>
-      <geo:Series isUptodate="true" name="SimpleMafic_Series" relation="2">
+      <geo:Series isUptodate="false" name="SimpleMafic_Series" relation="2">
         <geo:Data Name="SimpleMafic"/>
         <geo:PotentialField maxValue="34964.43799999985" Xmax="744692.688" Xmin="709728.2500000001" Ymax="6917775.5" Ymin="6885850.500000001" Zmax="550.3876145290445" Zmin="-6075.459309281727">
           <geo:covariance anisotropyA1="0.0" anisotropyA2="0.0" anisotropyA3="0.0" anisotropyV1="9.090909090909091E-6" anisotropyV2="9.090909090909091E-6" anisotropyV3="9.090909090909091E-6" covarianceModel="1" degreDrift="1" gradient="1.0" isotropic="true" nuggetGradient="0.01" nuggetPotentiel="1.0E-6" range="110000.0" tangentVariance="1.0"/>

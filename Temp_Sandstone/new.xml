@@ -313,62 +313,62 @@
           <ns0:Interface ObservationID="SM_Atley_5">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">40808.023000,5611.312327</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">40808.023000,5593.858617</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="SM_Atley_4">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">36774.809000,3205.994326</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">36774.809000,3081.319651</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="SM_Atley_3">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">31214.105000,5878.705730</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">31214.105000,5983.764378</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="SM_Atley_2">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">22125.637000,3624.034070</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">22125.637000,3588.687268</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="SM_Atley_1">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">18358.709000,4508.251584</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">18358.709000,4484.762357</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="BIF_Atley_3">
             <ns0:Data Name="SimpleBIF" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">31343.773000,4055.687886</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">31343.773000,3934.734405</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="BIF_Atley_2">
             <ns0:Data Name="SimpleBIF" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">22242.744000,1834.238486</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">22242.744000,1797.742680</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="BIF_Atley_4">
             <ns0:Data Name="SimpleBIF" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">36612.789000,538.746962</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">36612.789000,365.076107</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="BIF_Atley_5">
             <ns0:Data Name="SimpleBIF" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">41821.934000,1787.960677</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">41821.934000,1886.528653</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
         </ns0:Interfaces>
         <ns0:Foliations>
           <ns0:Foliation ObservationID="SM_Atley_Ori_W">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="77.5310867558" Dip="75.0803826426" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="103.373602138" Dip="70.5799115775" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">15157.937000,-1621.388000</ns1:coordinates>
               </ns1:Point>
@@ -376,7 +376,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="SM_Atley_Ori_E">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="256.164714433" Dip="57.2581517335" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="245.014706086" Dip="68.1172564446" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">45743.688000,-2786.869000</ns1:coordinates>
               </ns1:Point>
@@ -384,7 +384,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="SM_Atley_Ori_C">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="16.8895517073" Dip="42.8237077156" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="32.2515341361" Dip="54.3096657215" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">26251.322000,-5298.154000</ns1:coordinates>
               </ns1:Point>
@@ -392,7 +392,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="BIF_Atley_Ori_W">
             <ns0:Data Name="SimpleBIF" />
-            <ns0:FoliationObservation Azimuth="92.0568673534" Dip="61.5746188769" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="80.9954205571" Dip="63.3776042057" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">20147.113000,-1497.488000</ns1:coordinates>
               </ns1:Point>
@@ -400,7 +400,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="BIF_Atley_Ori_E">
             <ns0:Data Name="SimpleBIF" />
-            <ns0:FoliationObservation Azimuth="228.028252284" Dip="48.7694503253" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="208.256252272" Dip="49.6304524019" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">42720.059000,-1437.613000</ns1:coordinates>
               </ns1:Point>
@@ -1202,14 +1202,14 @@
           <ns0:Interface ObservationID="SM_Sand_C">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">17372.576000,4976.081733</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">17372.576000,4951.764789</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
         </ns0:Interfaces>
         <ns0:Foliations>
           <ns0:Foliation ObservationID="SM_Sand_Ori_E">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="258.974989043" Dip="74.6817214382" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="262.157237105" Dip="66.9844047218" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">23717.750000,-1680.307000</ns1:coordinates>
               </ns1:Point>
@@ -1217,7 +1217,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="SM_Sand_Ori_C">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="255.600359018" Dip="-0.0508811680049" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="274.820427686" Dip="3.79166021529" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">19583.500000,-4196.808000</ns1:coordinates>
               </ns1:Point>
@@ -1225,7 +1225,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="SM_Sand_Ori_W">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="87.2223833964" Dip="48.1799300798" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="85.7420724339" Dip="43.9951365605" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">15238.845000,-3763.863000</ns1:coordinates>
               </ns1:Point>
@@ -1861,20 +1861,20 @@
           <ns0:Interface ObservationID="SM_Seis_E">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">36284.297000,2939.705532</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">36284.297000,3253.361716</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
           <ns0:Interface ObservationID="SM_Seis_C">
             <ns0:Data Name="SimpleMafic" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">29815.703000,5925.648384</ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">29815.703000,5768.538927</ns1:coordinates>
             </ns1:LineString>
           </ns0:Interface>
         </ns0:Interfaces>
         <ns0:Foliations>
           <ns0:Foliation ObservationID="SM_Seis_Ori_C">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="258.665876023" Dip="26.3934908061" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="256.148874959" Dip="14.6430290718" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">34448.430000,-3825.776000</ns1:coordinates>
               </ns1:Point>
@@ -1882,7 +1882,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="SM_Seis_Ori_E">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="268.731138794" Dip="51.9348227729" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="251.929175713" Dip="51.8980936881" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">37026.152000,-1538.629000</ns1:coordinates>
               </ns1:Point>
@@ -1890,7 +1890,7 @@
           </ns0:Foliation>
           <ns0:Foliation ObservationID="SM_Seis_Ori_W">
             <ns0:Data Name="SimpleMafic" />
-            <ns0:FoliationObservation Azimuth="84.8965329572" Dip="22.9968886035" NormalPolarity="true">
+            <ns0:FoliationObservation Azimuth="92.9342623622" Dip="17.0615065575" NormalPolarity="true">
               <ns1:Point>
                 <ns1:coordinates cs="," decimal="." ts=" ">22337.496000,-1882.895000</ns1:coordinates>
               </ns1:Point>

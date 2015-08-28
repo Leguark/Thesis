@@ -287,42 +287,42 @@
           <ns0:Interface ObservationID="sedi2_left">
             <ns0:Data Name="Form3" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">50.000000,-350.000000 150.000000,-350.000000 </ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">50.000000,-345.741618 150.000000,-345.741618 </ns1:coordinates>
             </ns1:LineString>
             <ns0:AssociatedFoliationType Azimuth="0.0" Dip="0.0" LineAzimuth="0.0" LineDip="0.0" Method="3" NormalPolarity="true" />
           </ns0:Interface>
           <ns0:Interface ObservationID="sedi1_left">
             <ns0:Data Name="Form2" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">50.000000,-550.000000 150.000000,-550.000000 </ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">50.000000,-530.223877 150.000000,-530.223877 </ns1:coordinates>
             </ns1:LineString>
             <ns0:AssociatedFoliationType Azimuth="0.0" Dip="0.0" LineAzimuth="0.0" LineDip="0.0" Method="3" NormalPolarity="true" />
           </ns0:Interface>
           <ns0:Interface ObservationID="basement_left">
             <ns0:Data Name="Form1" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">50.000000,-650.000000 150.000000,-650.000000 </ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">50.000000,-678.844062 150.000000,-678.844062 </ns1:coordinates>
             </ns1:LineString>
             <ns0:AssociatedFoliationType Azimuth="0.0" Dip="0.0" LineAzimuth="0.0" LineDip="0.0" Method="3" NormalPolarity="true" />
           </ns0:Interface>
           <ns0:Interface ObservationID="sedi2_right">
             <ns0:Data Name="Form3" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">850.000000,-350.000000 950.000000,-350.000000 </ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">850.000000,-345.741618 950.000000,-345.741618 </ns1:coordinates>
             </ns1:LineString>
             <ns0:AssociatedFoliationType Azimuth="0.0" Dip="0.0" LineAzimuth="0.0" LineDip="0.0" Method="3" NormalPolarity="true" />
           </ns0:Interface>
           <ns0:Interface ObservationID="sedi1_right">
             <ns0:Data Name="Form2" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">850.000000,-550.000000 950.000000,-550.000000 </ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">850.000000,-530.223877 950.000000,-530.223877 </ns1:coordinates>
             </ns1:LineString>
             <ns0:AssociatedFoliationType Azimuth="0.0" Dip="0.0" LineAzimuth="0.0" LineDip="0.0" Method="3" NormalPolarity="true" />
           </ns0:Interface>
           <ns0:Interface ObservationID="basement_right">
             <ns0:Data Name="Form1" />
             <ns1:LineString>
-              <ns1:coordinates cs="," decimal="." ts=" ">850.000000,-650.000000 950.000000,-650.000000 </ns1:coordinates>
+              <ns1:coordinates cs="," decimal="." ts=" ">850.000000,-678.844062 950.000000,-678.844062 </ns1:coordinates>
             </ns1:LineString>
             <ns0:AssociatedFoliationType Azimuth="0.0" Dip="0.0" LineAzimuth="0.0" LineDip="0.0" Method="3" NormalPolarity="true" />
           </ns0:Interface>

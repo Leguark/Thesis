@@ -1,0 +1,21 @@
+digraph G {
+alpha [shape=invtriangle];
+alpha_l;
+alpha_l -> alpha  [label=alpha_l];
+alpha_r;
+alpha_r -> alpha  [label=alpha_r];
+alpha_offset;
+alpha_offset -> alpha  [label=alpha_offset];
+thickness_layer1;
+beta [shape=invtriangle];
+alpha -> beta  [label=alpha];
+thickness_layer1 -> beta  [label=thickness_layer1];
+thickness_layer2;
+section [shape=invtriangle];
+alpha -> section  [label=Form3];
+beta -> section  [label=Form2];
+gamma [shape=invtriangle];
+gamma -> section  [label=Form1];
+beta -> gamma  [label=beta];
+thickness_layer2 -> gamma  [label=thickness_layer2];
+}

@@ -1,0 +1,969 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_UNCAUGHT_CXX_EXCEPTION (0xe06d7363) at pc=0x00007ffe0b2a8b9c, pid=8184, tid=5060
+#
+# JRE version: 7.0_21-b11
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.21-b01 mixed mode windows-amd64 )
+# Problematic frame:
+# C  [KERNELBASE.dll+0x8b9c]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001d1c5800):  JavaThread "main" [_thread_in_native, id=5060, stack(0x0000000000040000,0x0000000000230000)]
+
+siginfo: ExceptionCode=0xe06d7363, ExceptionInformation=0x0000000019930520 0x0000000000227da0 0x00007ffded522b48 0x00007ffded470000 
+
+Registers:
+RAX=0x000000000022a570, RBX=0x00007ffded522b48, RCX=0x0000000000000000, RDX=0x00007ffde5b4ee70
+RSP=0x0000000000227c30, RBP=0x0000000000227d70, RSI=0x0000000000000282, RDI=0x00000002f6a6ca38
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x5ff197db00000030, R11=0x6c65646f6d6f6547
+R12=0x0000000000227fa8, R13=0x0000000000227fd8, R14=0x00000003aa688f78, R15=0x0000000000228008
+RIP=0x00007ffe0b2a8b9c, EFLAGS=0x0000000000000206
+
+Top of Stack: (sp=0x0000000000227c30)
+0x0000000000227c30:   0000000000558030 00007ffded522b48
+0x0000000000227c40:   0000000000000282 00000002f6a6ca38
+0x0000000000227c50:   00000001e06d7363 0000000000000000
+0x0000000000227c60:   00007ffe0b2a8b9c 0000000000000004
+0x0000000000227c70:   0000000019930520 0000000000227da0
+0x0000000000227c80:   00007ffded522b48 00007ffded470000
+0x0000000000227c90:   0000000000227dc0 0000000000000002
+0x0000000000227ca0:   0000000000227e00 000000001cd58fe0
+0x0000000000227cb0:   0000000000000000 00007ffdeb514b14
+0x0000000000227cc0:   0000000000228008 0000000000227fa8
+0x0000000000227cd0:   0000000000227d70 0000000000000443
+0x0000000000227ce0:   0000000000228008 00000003aa688f78
+0x0000000000227cf0:   0000cb9199bac69a 00000002f6a6ca38
+0x0000000000227d00:   0000000000000282 00007ffded4ce92c
+0x0000000000227d10:   00007ffded522b48 0000000000227d80
+0x0000000000227d20:   0000000000000001 0000000000000000 
+
+Instructions: (pc=0x00007ffe0b2a8b9c)
+0x00007ffe0b2a8b7c:   44 3b c0 44 0f 47 c0 44 89 44 24 38 49 c1 e0 03
+0x00007ffe0b2a8b8c:   e8 b3 8a ff ff 48 8d 4c 24 20 ff 15 d4 0a 10 00
+0x00007ffe0b2a8b9c:   48 8b 8c 24 c0 00 00 00 48 33 cc e8 94 88 ff ff
+0x00007ffe0b2a8bac:   48 81 c4 d8 00 00 00 c3 90 90 90 90 90 90 90 90 
+
+
+Register to memory mapping:
+
+RAX=0x000000000022a570 is pointing into the stack for thread: 0x000000001d1c5800
+RBX=0x00007ffded522b48 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x00007ffde5b4ee70 is an unknown value
+RSP=0x0000000000227c30 is pointing into the stack for thread: 0x000000001d1c5800
+RBP=0x0000000000227d70 is pointing into the stack for thread: 0x000000001d1c5800
+RSI=0x0000000000000282 is an unknown value
+RDI=0x00000002f6a6ca38 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x5ff197db00000030 is an unknown value
+R11=0x6c65646f6d6f6547 is an unknown value
+R12=0x0000000000227fa8 is pointing into the stack for thread: 0x000000001d1c5800
+R13=0x0000000000227fd8 is pointing into the stack for thread: 0x000000001d1c5800
+R14=0x00000003aa688f78 is an unknown value
+R15=0x0000000000228008 is pointing into the stack for thread: 0x000000001d1c5800
+
+
+Stack: [0x0000000000040000,0x0000000000230000],  sp=0x0000000000227c30,  free space=1951k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [KERNELBASE.dll+0x8b9c]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  Gui.PD_Section.PD_Section_MakeSection_1(LGui/StringTool_String;Z)LGui/SectionDS_Section;+0
+J  com.geomodeller.model.utils.ProjectAssembler_v2_0_0.LoadSection(Lcom/geomodeller/geo/DataSectionType;)LGui/Projet_Data;
+j  com.geomodeller.model.utils.ProjectAssembler_v2_0_0.loadSections(Lcom/geomodeller/geo/Project3DEditType;)V+52
+j  com.geomodeller.model.utils.ProjectAssembler_v2_0_0.loadAProject(Lcom/geomodeller/geo/Project3DEditType;Lcom/dfa/ui/UIcontext;)V+308
+j  com.geomodeller.model.utils.ProjectAssembler_v2_0_0.load(Ljava/io/File;Lcom/dfa/ui/UIcontext;)Z+97
+j  com.geomodeller.model.utils.ProjectAssembler_v2_0_0.load(Ljava/io/File;Lcom/geomodeller/model/utils/IProjectAssembler$SupportedVersion;Lcom/dfa/ui/UIcontext;)Z+8
+j  GuiJava.driverXml.GeomodellerXmlDriver.loadProject(Ljava/net/URI;ZLcom/dfa/ui/UIcontext;)Z+131
+j  GuiJava.driverXml.GeomodellerXmlDriver.loadProject(Ljava/lang/String;Z)Z+23
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000298df000 JavaThread "dfa.memorychecker[5284]" daemon [_thread_blocked, id=4448, stack(0x000000039dfe0000,0x000000039e1d0000)]
+  0x00000000298ec800 JavaThread "dfa.memorychecker[5283]" daemon [_thread_blocked, id=8720, stack(0x00000003b6200000,0x00000003b63f0000)]
+  0x00000000298e0000 JavaThread "dfa.memorychecker[5278]" daemon [_thread_blocked, id=5084, stack(0x0000000398fc0000,0x00000003991b0000)]
+  0x00000000298e0800 JavaThread "dfa.memorychecker[5276]" daemon [_thread_blocked, id=9212, stack(0x00000003acbd0000,0x00000003acdc0000)]
+  0x00000000298ef800 JavaThread "dfa.memorychecker[5275]" daemon [_thread_blocked, id=3312, stack(0x00000003989f0000,0x0000000398be0000)]
+  0x00000000298e6000 JavaThread "dfa.memorychecker[5273]" daemon [_thread_blocked, id=6960, stack(0x0000000374de0000,0x0000000374fd0000)]
+  0x00000000298e1800 JavaThread "dfa.memorychecker[5270]" daemon [_thread_blocked, id=3588, stack(0x0000000398dd0000,0x0000000398fc0000)]
+  0x00000000298de800 JavaThread "dfa.memorychecker[5267]" daemon [_thread_blocked, id=9136, stack(0x00000003a78d0000,0x00000003a7ac0000)]
+  0x00000000298ec000 JavaThread "dfa.memorychecker[5266]" daemon [_thread_blocked, id=8624, stack(0x000000039e3c0000,0x000000039e5b0000)]
+  0x00000000298eb000 JavaThread "dfa.memorychecker[5264]" daemon [_thread_blocked, id=7564, stack(0x00000003ae6b0000,0x00000003ae8a0000)]
+  0x00000000298e3000 JavaThread "dfa.memorychecker[5247]" daemon [_thread_blocked, id=8948, stack(0x00000003aec80000,0x00000003aee70000)]
+  0x00000000298ef000 JavaThread "dfa.memorychecker[5245]" daemon [_thread_blocked, id=2792, stack(0x00000000d59d0000,0x00000000d5bc0000)]
+  0x00000000298ed800 JavaThread "dfa.memorychecker[5242]" daemon [_thread_blocked, id=9020, stack(0x0000000399740000,0x0000000399930000)]
+  0x00000000298e8000 JavaThread "dfa.memorychecker[5238]" daemon [_thread_blocked, id=4804, stack(0x00000003aea90000,0x00000003aec80000)]
+  0x00000000298e7800 JavaThread "dfa.memorychecker[5223]" daemon [_thread_blocked, id=8380, stack(0x000000039e5b0000,0x000000039e7a0000)]
+  0x00000000298ee000 JavaThread "dfa.memorychecker[5220]" daemon [_thread_blocked, id=7488, stack(0x0000000040790000,0x0000000040980000)]
+  0x00000000298dd800 JavaThread "dfa.memorychecker[5217]" daemon [_thread_blocked, id=5440, stack(0x0000000398be0000,0x0000000398dd0000)]
+  0x00000000298e4800 JavaThread "dfa.memorychecker[5216]" daemon [_thread_blocked, id=372, stack(0x000000039e7a0000,0x000000039e990000)]
+  0x00000000298e3800 JavaThread "dfa.memorychecker[5211]" daemon [_thread_blocked, id=8976, stack(0x0000000397100000,0x00000003972f0000)]
+  0x00000000298e9800 JavaThread "dfa.memorychecker[5210]" daemon [_thread_blocked, id=5744, stack(0x00000003ae8a0000,0x00000003aea90000)]
+  0x00000000298e5000 JavaThread "dfa.memorychecker[5204]" daemon [_thread_blocked, id=5392, stack(0x00000003aee70000,0x00000003af060000)]
+  0x00000000298e2000 JavaThread "dfa.memorychecker[5199]" daemon [_thread_blocked, id=8680, stack(0x0000000384670000,0x0000000384860000)]
+  0x00000000298ea800 JavaThread "dfa.memorychecker[5193]" daemon [_thread_blocked, id=8868, stack(0x00000003b6770000,0x00000003b6960000)]
+  0x000000002951c000 JavaThread "dfa.memorychecker[5151]" daemon [_thread_blocked, id=7680, stack(0x0000000396f10000,0x0000000397100000)]
+  0x0000000029d50800 JavaThread "dfa.memorychecker[5145]" daemon [_thread_blocked, id=4404, stack(0x000000038b1d0000,0x000000038b3c0000)]
+  0x000000002967a000 JavaThread "dfa.memorychecker[5139]" daemon [_thread_blocked, id=7820, stack(0x00000003940a0000,0x0000000394290000)]
+  0x000000002a2d5800 JavaThread "dfa.memorychecker[5133]" daemon [_thread_blocked, id=3544, stack(0x00000002d3d90000,0x00000002d3f80000)]
+  0x000000002a3f4000 JavaThread "dfa.memorychecker[5131]" daemon [_thread_blocked, id=9064, stack(0x000000038afe0000,0x000000038b1d0000)]
+  0x00000000297ea000 JavaThread "dfa.memorychecker[5123]" daemon [_thread_blocked, id=8164, stack(0x000000038b550000,0x000000038b740000)]
+  0x00000000296d5000 JavaThread "dfa.memorychecker[5118]" daemon [_thread_blocked, id=9104, stack(0x0000000393eb0000,0x00000003940a0000)]
+  0x000000002a27b000 JavaThread "dfa.memorychecker[5110]" daemon [_thread_blocked, id=192, stack(0x000000038adf0000,0x000000038afe0000)]
+  0x000000002a3e0800 JavaThread "dfa.memorychecker[5104]" daemon [_thread_blocked, id=2372, stack(0x000000037b9c0000,0x000000037bbb0000)]
+  0x0000000029572000 JavaThread "dfa.memorychecker[5102]" daemon [_thread_blocked, id=8936, stack(0x0000000384480000,0x0000000384670000)]
+  0x000000002a25e000 JavaThread "dfa.memorychecker[5094]" daemon [_thread_blocked, id=5904, stack(0x00000003849a0000,0x0000000384b90000)]
+  0x0000000029520800 JavaThread "dfa.memorychecker[5086]" daemon [_thread_blocked, id=8492, stack(0x0000000384290000,0x0000000384480000)]
+  0x000000002986a000 JavaThread "dfa.memorychecker[5080]" daemon [_thread_blocked, id=8940, stack(0x000000037b230000,0x000000037b420000)]
+  0x000000002a446800 JavaThread "dfa.memorychecker[5073]" daemon [_thread_blocked, id=1112, stack(0x000000037b040000,0x000000037b230000)]
+  0x0000000029519000 JavaThread "dfa.memorychecker[5067]" daemon [_thread_blocked, id=3948, stack(0x000000037ae50000,0x000000037b040000)]
+  0x000000002966e000 JavaThread "dfa.memorychecker[5061]" daemon [_thread_blocked, id=8592, stack(0x000000037ac60000,0x000000037ae50000)]
+  0x000000002a2d6000 JavaThread "dfa.memorychecker[5055]" daemon [_thread_blocked, id=3624, stack(0x0000000375870000,0x0000000375a60000)]
+  0x00000000296d6000 JavaThread "dfa.memorychecker[5049]" daemon [_thread_blocked, id=7052, stack(0x0000000375680000,0x0000000375870000)]
+  0x00000000291d6000 JavaThread "dfa.memorychecker[5043]" daemon [_thread_blocked, id=4000, stack(0x0000000374bf0000,0x0000000374de0000)]
+  0x000000002a3f1000 JavaThread "dfa.memorychecker[5037]" daemon [_thread_blocked, id=5596, stack(0x00000003707e0000,0x00000003709d0000)]
+  0x000000002a3e7000 JavaThread "dfa.memorychecker[5031]" daemon [_thread_blocked, id=3416, stack(0x00000003705f0000,0x00000003707e0000)]
+  0x000000002a267000 JavaThread "dfa.memorychecker[5025]" daemon [_thread_blocked, id=8932, stack(0x000000036fd50000,0x000000036ff40000)]
+  0x00000000297ed000 JavaThread "dfa.memorychecker[5019]" daemon [_thread_blocked, id=9152, stack(0x000000036fb60000,0x000000036fd50000)]
+  0x000000002a278800 JavaThread "dfa.memorychecker[5013]" daemon [_thread_blocked, id=6928, stack(0x000000036e260000,0x000000036e450000)]
+  0x0000000029861000 JavaThread "dfa.memorychecker[5007]" daemon [_thread_blocked, id=7624, stack(0x000000036e070000,0x000000036e260000)]
+  0x000000002957b000 JavaThread "dfa.memorychecker[5001]" daemon [_thread_blocked, id=564, stack(0x000000035fc50000,0x000000035fe40000)]
+  0x000000002a442800 JavaThread "dfa.memorychecker[4995]" daemon [_thread_blocked, id=4428, stack(0x00000003667f0000,0x00000003669e0000)]
+  0x000000002957d000 JavaThread "dfa.memorychecker[4989]" daemon [_thread_blocked, id=4232, stack(0x0000000366000000,0x00000003661f0000)]
+  0x000000002957c800 JavaThread "dfa.memorychecker[4983]" daemon [_thread_blocked, id=8748, stack(0x000000035fa60000,0x000000035fc50000)]
+  0x000000002957b800 JavaThread "dfa.memorychecker[4977]" daemon [_thread_blocked, id=9176, stack(0x000000035f870000,0x000000035fa60000)]
+  0x000000002957e800 JavaThread "dfa.memorychecker[4971]" daemon [_thread_blocked, id=4364, stack(0x000000035f680000,0x000000035f870000)]
+  0x0000000029571000 JavaThread "dfa.memorychecker[4965]" daemon [_thread_blocked, id=3964, stack(0x000000035f490000,0x000000035f680000)]
+  0x000000002a2c7800 JavaThread "dfa.memorychecker[4959]" daemon [_thread_blocked, id=1816, stack(0x000000035d1c0000,0x000000035d3b0000)]
+  0x000000002a2da800 JavaThread "dfa.memorychecker[4953]" daemon [_thread_blocked, id=9156, stack(0x000000035c9d0000,0x000000035cbc0000)]
+  0x000000002a2d4800 JavaThread "dfa.memorychecker[4947]" daemon [_thread_blocked, id=5660, stack(0x000000035a4a0000,0x000000035a690000)]
+  0x000000002a2da000 JavaThread "dfa.memorychecker[4941]" daemon [_thread_blocked, id=9056, stack(0x000000035a2b0000,0x000000035a4a0000)]
+  0x000000002a2d1000 JavaThread "dfa.memorychecker[4935]" daemon [_thread_blocked, id=8708, stack(0x000000035ac10000,0x000000035ae00000)]
+  0x00000000296da000 JavaThread "dfa.memorychecker[4929]" daemon [_thread_blocked, id=9008, stack(0x000000035a0c0000,0x000000035a2b0000)]
+  0x00000000296dc000 JavaThread "dfa.memorychecker[4923]" daemon [_thread_blocked, id=3140, stack(0x0000000359ed0000,0x000000035a0c0000)]
+  0x00000000296dd800 JavaThread "dfa.memorychecker[4917]" daemon [_thread_blocked, id=160, stack(0x000000034d560000,0x000000034d750000)]
+  0x00000000296db800 JavaThread "dfa.memorychecker[4911]" daemon [_thread_blocked, id=8968, stack(0x000000034d370000,0x000000034d560000)]
+  0x00000000296d1800 JavaThread "dfa.memorychecker[4905]" daemon [_thread_blocked, id=492, stack(0x0000000347510000,0x0000000347700000)]
+  0x00000000297f2000 JavaThread "dfa.memorychecker[4899]" daemon [_thread_blocked, id=6096, stack(0x000000034d180000,0x000000034d370000)]
+  0x00000000297f4800 JavaThread "dfa.memorychecker[4893]" daemon [_thread_blocked, id=9160, stack(0x000000034cf90000,0x000000034d180000)]
+  0x00000000297f3800 JavaThread "dfa.memorychecker[4887]" daemon [_thread_blocked, id=7604, stack(0x000000034cda0000,0x000000034cf90000)]
+  0x00000000297ee800 JavaThread "dfa.memorychecker[4881]" daemon [_thread_blocked, id=7760, stack(0x0000000340a10000,0x0000000340c00000)]
+  0x00000000297f1800 JavaThread "dfa.memorychecker[4875]" daemon [_thread_blocked, id=8700, stack(0x0000000346d20000,0x0000000346f10000)]
+  0x00000000297f0800 JavaThread "dfa.memorychecker[4869]" daemon [_thread_blocked, id=1008, stack(0x0000000340280000,0x0000000340470000)]
+  0x00000000297eb800 JavaThread "dfa.memorychecker[4863]" daemon [_thread_blocked, id=1516, stack(0x0000000340090000,0x0000000340280000)]
+  0x000000002a265800 JavaThread "dfa.memorychecker[4857]" daemon [_thread_blocked, id=7268, stack(0x000000033fea0000,0x0000000340090000)]
+  0x000000002a266800 JavaThread "dfa.memorychecker[4851]" daemon [_thread_blocked, id=5612, stack(0x000000033fcb0000,0x000000033fea0000)]
+  0x000000002a264000 JavaThread "dfa.memorychecker[4845]" daemon [_thread_blocked, id=8504, stack(0x0000000339c80000,0x0000000339e70000)]
+  0x000000002a263800 JavaThread "dfa.memorychecker[4839]" daemon [_thread_blocked, id=1664, stack(0x0000000339a90000,0x0000000339c80000)]
+  0x000000002a262800 JavaThread "dfa.memorychecker[4833]" daemon [_thread_blocked, id=7396, stack(0x000000033a420000,0x000000033a610000)]
+  0x000000002a262000 JavaThread "dfa.memorychecker[4827]" daemon [_thread_blocked, id=812, stack(0x00000003398a0000,0x0000000339a90000)]
+  0x000000002a265000 JavaThread "dfa.memorychecker[4821]" daemon [_thread_blocked, id=7608, stack(0x00000003396b0000,0x00000003398a0000)]
+  0x000000002a261000 JavaThread "dfa.memorychecker[4815]" daemon [_thread_blocked, id=1624, stack(0x00000003373f0000,0x00000003375e0000)]
+  0x0000000029536800 JavaThread "dfa.memorychecker[4809]" daemon [_thread_blocked, id=8468, stack(0x0000000336c50000,0x0000000336e40000)]
+  0x0000000029536000 JavaThread "dfa.memorychecker[4803]" daemon [_thread_blocked, id=5328, stack(0x0000000332320000,0x0000000332510000)]
+  0x0000000029532000 JavaThread "dfa.memorychecker[4797]" daemon [_thread_blocked, id=2444, stack(0x0000000336a60000,0x0000000336c50000)]
+  0x000000002952d800 JavaThread "dfa.memorychecker[4791]" daemon [_thread_blocked, id=8916, stack(0x0000000336870000,0x0000000336a60000)]
+  0x000000002952c800 JavaThread "dfa.memorychecker[4785]" daemon [_thread_blocked, id=8008, stack(0x0000000336680000,0x0000000336870000)]
+  0x000000002951d800 JavaThread "dfa.memorychecker[4779]" daemon [_thread_blocked, id=7944, stack(0x0000000331480000,0x0000000331670000)]
+  0x000000002951d000 JavaThread "dfa.memorychecker[4773]" daemon [_thread_blocked, id=6892, stack(0x0000000331290000,0x0000000331480000)]
+  0x000000002951b800 JavaThread "dfa.memorychecker[4767]" daemon [_thread_blocked, id=7864, stack(0x000000031cb60000,0x000000031cd50000)]
+  0x000000002951f000 JavaThread "dfa.memorychecker[4761]" daemon [_thread_blocked, id=8364, stack(0x00000003310a0000,0x0000000331290000)]
+  0x0000000029517800 JavaThread "dfa.memorychecker[4755]" daemon [_thread_blocked, id=8408, stack(0x000000031f1b0000,0x000000031f3a0000)]
+  0x00000000291f2800 JavaThread "dfa.memorychecker[4749]" daemon [_thread_blocked, id=9188, stack(0x000000031e450000,0x000000031e640000)]
+  0x00000000291ee000 JavaThread "dfa.memorychecker[4743]" daemon [_thread_blocked, id=2336, stack(0x000000031c970000,0x000000031cb60000)]
+  0x00000000291ec000 JavaThread "dfa.memorychecker[4737]" daemon [_thread_blocked, id=5284, stack(0x00000002ea730000,0x00000002ea920000)]
+  0x00000000291e6000 JavaThread "dfa.memorychecker[4731]" daemon [_thread_blocked, id=9164, stack(0x00000002dc340000,0x00000002dc530000)]
+  0x00000000291e3000 JavaThread "dfa.memorychecker[4725]" daemon [_thread_blocked, id=8632, stack(0x00000002d3f80000,0x00000002d4170000)]
+  0x00000000291df000 JavaThread "dfa.memorychecker[4719]" daemon [_thread_blocked, id=3420, stack(0x00000002e06e0000,0x00000002e08d0000)]
+  0x00000000291dd000 JavaThread "dfa.memorychecker[4713]" daemon [_thread_blocked, id=7484, stack(0x00000002de810000,0x00000002dea00000)]
+  0x00000000291dc000 JavaThread "dfa.memorychecker[4707]" daemon [_thread_blocked, id=6744, stack(0x00000002de2d0000,0x00000002de4c0000)]
+  0x00000000291d7800 JavaThread "dfa.memorychecker[4701]" daemon [_thread_blocked, id=3912, stack(0x00000002de0e0000,0x00000002de2d0000)]
+  0x00000000291c4800 JavaThread "dfa.memorychecker[4695]" daemon [_thread_blocked, id=680, stack(0x00000002dbd70000,0x00000002dbf60000)]
+  0x000000002a3fe000 JavaThread "dfa.memorychecker[4689]" daemon [_thread_blocked, id=9028, stack(0x00000002da630000,0x00000002da820000)]
+  0x000000002a3fd000 JavaThread "dfa.memorychecker[4683]" daemon [_thread_blocked, id=5632, stack(0x00000002d8470000,0x00000002d8660000)]
+  0x000000002a3f8000 JavaThread "dfa.memorychecker[4677]" daemon [_thread_blocked, id=5052, stack(0x00000002d52e0000,0x00000002d54d0000)]
+  0x000000002a3fb000 JavaThread "dfa.memorychecker[4671]" daemon [_thread_blocked, id=6088, stack(0x00000002cac30000,0x00000002cae20000)]
+  0x000000002a3f7000 JavaThread "dfa.memorychecker[4665]" daemon [_thread_blocked, id=4860, stack(0x00000002caa40000,0x00000002cac30000)]
+  0x000000002a3f8800 JavaThread "dfa.memorychecker[4659]" daemon [_thread_blocked, id=1152, stack(0x00000002ca850000,0x00000002caa40000)]
+  0x000000002a3fa000 JavaThread "dfa.memorychecker[4653]" daemon [_thread_blocked, id=4632, stack(0x00000002ca660000,0x00000002ca850000)]
+  0x000000002a3f6800 JavaThread "dfa.memorychecker[4647]" daemon [_thread_blocked, id=8884, stack(0x00000002bf620000,0x00000002bf810000)]
+  0x000000002a3f9800 JavaThread "dfa.memorychecker[4641]" daemon [_thread_blocked, id=5692, stack(0x00000002bee20000,0x00000002bf010000)]
+  0x000000002a3f3800 JavaThread "dfa.memorychecker[4635]" daemon [_thread_blocked, id=8440, stack(0x00000002b8820000,0x00000002b8a10000)]
+  0x000000002a3f2800 JavaThread "dfa.memorychecker[4629]" daemon [_thread_blocked, id=5788, stack(0x00000002b6fe0000,0x00000002b71d0000)]
+  0x000000002a291000 JavaThread "dfa.memorychecker[4623]" daemon [_thread_blocked, id=7620, stack(0x00000002b6800000,0x00000002b69f0000)]
+  0x000000002a294000 JavaThread "dfa.memorychecker[4617]" daemon [_thread_blocked, id=8856, stack(0x00000002b8ac0000,0x00000002b8cb0000)]
+  0x000000002a290000 JavaThread "dfa.memorychecker[4611]" daemon [_thread_blocked, id=9168, stack(0x00000002abe30000,0x00000002ac020000)]
+  0x000000002a28c000 JavaThread "dfa.memorychecker[4605]" daemon [_thread_blocked, id=4204, stack(0x00000002abc40000,0x00000002abe30000)]
+  0x000000002a28b800 JavaThread "dfa.memorychecker[4599]" daemon [_thread_blocked, id=7804, stack(0x00000002a8c20000,0x00000002a8e10000)]
+  0x000000002a28e800 JavaThread "dfa.memorychecker[4593]" daemon [_thread_blocked, id=3336, stack(0x00000002a9420000,0x00000002a9610000)]
+  0x000000002a284800 JavaThread "dfa.memorychecker[4587]" daemon [_thread_blocked, id=6180, stack(0x00000002a3d80000,0x00000002a3f70000)]
+  0x000000002a279800 JavaThread "dfa.memorychecker[4581]" daemon [_thread_blocked, id=8696, stack(0x00000002a3b90000,0x00000002a3d80000)]
+  0x000000002a278000 JavaThread "dfa.memorychecker[4575]" daemon [_thread_blocked, id=4712, stack(0x000000028e700000,0x000000028e8f0000)]
+  0x000000002a276800 JavaThread "dfa.memorychecker[4569]" daemon [_thread_blocked, id=9040, stack(0x00000002997e0000,0x00000002999d0000)]
+  0x000000002a277000 JavaThread "dfa.memorychecker[4563]" daemon [_thread_blocked, id=8312, stack(0x0000000299000000,0x00000002991f0000)]
+  0x000000002a44b800 JavaThread "dfa.memorychecker[4557]" daemon [_thread_blocked, id=3152, stack(0x0000000293cc0000,0x0000000293eb0000)]
+  0x000000002a44a000 JavaThread "dfa.memorychecker[4551]" daemon [_thread_blocked, id=7196, stack(0x00000002934e0000,0x00000002936d0000)]
+  0x000000002a448000 JavaThread "dfa.memorychecker[4545]" daemon [_thread_blocked, id=5772, stack(0x000000027d590000,0x000000027d780000)]
+  0x000000002a44b000 JavaThread "dfa.memorychecker[4539]" daemon [_thread_blocked, id=6112, stack(0x000000028d990000,0x000000028db80000)]
+  0x000000002a447000 JavaThread "dfa.memorychecker[4533]" daemon [_thread_blocked, id=596, stack(0x0000000280520000,0x0000000280710000)]
+  0x000000002a445000 JavaThread "dfa.memorychecker[4527]" daemon [_thread_blocked, id=6148, stack(0x000000027cda0000,0x000000027cf90000)]
+  0x000000002a443800 JavaThread "dfa.memorychecker[4521]" daemon [_thread_blocked, id=6348, stack(0x000000026faf0000,0x000000026fce0000)]
+  0x000000002a449800 JavaThread "dfa.memorychecker[4515]" daemon [_thread_blocked, id=8232, stack(0x000000026f900000,0x000000026faf0000)]
+  0x000000002a442000 JavaThread "dfa.memorychecker[4509]" daemon [_thread_blocked, id=704, stack(0x0000000279290000,0x0000000279480000)]
+  0x000000002a441000 JavaThread "dfa.memorychecker[4503]" daemon [_thread_blocked, id=7352, stack(0x000000026fed0000,0x00000002700c0000)]
+  0x000000002a444000 JavaThread "dfa.memorychecker[4497]" daemon [_thread_blocked, id=8788, stack(0x0000000264d50000,0x0000000264f40000)]
+  0x000000002a440800 JavaThread "dfa.memorychecker[4491]" daemon [_thread_blocked, id=7972, stack(0x0000000264b60000,0x0000000264d50000)]
+  0x000000002a43d800 JavaThread "dfa.memorychecker[4485]" daemon [_thread_blocked, id=8168, stack(0x0000000255880000,0x0000000255a70000)]
+  0x000000002967b000 JavaThread "dfa.memorychecker[4479]" daemon [_thread_blocked, id=3984, stack(0x000000024f100000,0x000000024f2f0000)]
+  0x0000000029677000 JavaThread "dfa.memorychecker[4473]" daemon [_thread_blocked, id=188, stack(0x000000024ef10000,0x000000024f100000)]
+  0x0000000029678800 JavaThread "dfa.memorychecker[4467]" daemon [_thread_blocked, id=7100, stack(0x0000000255690000,0x0000000255880000)]
+  0x0000000029675800 JavaThread "dfa.memorychecker[4461]" daemon [_thread_blocked, id=8832, stack(0x000000024ed20000,0x000000024ef10000)]
+  0x0000000029675000 JavaThread "dfa.memorychecker[4455]" daemon [_thread_blocked, id=7920, stack(0x000000024eb30000,0x000000024ed20000)]
+  0x0000000029678000 JavaThread "dfa.memorychecker[4449]" daemon [_thread_blocked, id=1524, stack(0x0000000243aa0000,0x0000000243c90000)]
+  0x0000000029673800 JavaThread "dfa.memorychecker[4443]" daemon [_thread_blocked, id=9200, stack(0x000000024e940000,0x000000024eb30000)]
+  0x0000000029670800 JavaThread "dfa.memorychecker[4437]" daemon [_thread_blocked, id=8760, stack(0x000000023b960000,0x000000023bb50000)]
+  0x0000000029676800 JavaThread "dfa.memorychecker[4431]" daemon [_thread_blocked, id=9036, stack(0x00000001e75e0000,0x00000001e77d0000)]
+  0x000000002966d800 JavaThread "dfa.memorychecker[4425]" daemon [_thread_blocked, id=7988, stack(0x00000001e73f0000,0x00000001e75e0000)]
+  0x0000000029672800 JavaThread "dfa.memorychecker[4419]" daemon [_thread_blocked, id=4940, stack(0x000000023b770000,0x000000023b960000)]
+  0x0000000029671000 JavaThread "dfa.memorychecker[4413]" daemon [_thread_blocked, id=1884, stack(0x0000000201fa0000,0x0000000202190000)]
+  0x0000000029672000 JavaThread "dfa.memorychecker[4407]" daemon [_thread_blocked, id=9084, stack(0x00000001e6470000,0x00000001e6660000)]
+  0x000000002966f000 JavaThread "dfa.memorychecker[4401]" daemon [_thread_blocked, id=5064, stack(0x00000001e4200000,0x00000001e43f0000)]
+  0x0000000029868000 JavaThread "dfa.memorychecker[4395]" daemon [_thread_blocked, id=8396, stack(0x00000001e3a40000,0x00000001e3c30000)]
+  0x0000000029865000 JavaThread "dfa.memorychecker[4389]" daemon [_thread_blocked, id=8084, stack(0x00000001e3470000,0x00000001e3660000)]
+  0x0000000029860000 JavaThread "dfa.memorychecker[4383]" daemon [_thread_blocked, id=8180, stack(0x000000006a8f0000,0x000000006aae0000)]
+  0x000000002985f800 JavaThread "dfa.memorychecker[4382]" daemon [_thread_blocked, id=4888, stack(0x00000001e1510000,0x00000001e1700000)]
+  0x0000000029862800 JavaThread "dfa.memorychecker[4381]" daemon [_thread_blocked, id=8820, stack(0x00000000683d0000,0x00000000685c0000)]
+  0x000000002985b800 JavaThread "dfa.memorychecker[4380]" daemon [_thread_blocked, id=6104, stack(0x0000000049880000,0x0000000049a70000)]
+  0x000000002985e800 JavaThread "dfa.memorychecker[4379]" daemon [_thread_blocked, id=6352, stack(0x00000001daeb0000,0x00000001db0a0000)]
+  0x000000002985e000 JavaThread "dfa.memorychecker[4378]" daemon [_thread_blocked, id=5164, stack(0x00000001d8e50000,0x00000001d9040000)]
+  0x000000002985a000 JavaThread "dfa.memorychecker[4377]" daemon [_thread_blocked, id=352, stack(0x00000001116b0000,0x00000001118a0000)]
+  0x000000002985c800 JavaThread "dfa.memorychecker[4376]" daemon [_thread_blocked, id=5180, stack(0x00000000f5790000,0x00000000f5980000)]
+  0x0000000029856800 JavaThread "dfa.memorychecker[4375]" daemon [_thread_blocked, id=8756, stack(0x00000000f1e70000,0x00000000f2060000)]
+  0x0000000029859800 JavaThread "dfa.memorychecker[4374]" daemon [_thread_blocked, id=8160, stack(0x00000001110e0000,0x00000001112d0000)]
+  0x0000000029855800 JavaThread "dfa.memorychecker[4373]" daemon [_thread_blocked, id=1712, stack(0x000000010b050000,0x000000010b240000)]
+  0x0000000029858800 JavaThread "dfa.memorychecker[4372]" daemon [_thread_blocked, id=8736, stack(0x00000001e3850000,0x00000001e3a40000)]
+  0x0000000029858000 JavaThread "dfa.memorychecker[4370]" daemon [_thread_blocked, id=5752, stack(0x00000001e3660000,0x00000001e3850000)]
+  0x000000002a2dc000 JavaThread "dfa.memorychecker[4371]" daemon [_thread_blocked, id=5116, stack(0x00000000d6360000,0x00000000d6550000)]
+  0x000000002a2db800 JavaThread "dfa.memorychecker[4369]" daemon [_thread_blocked, id=7156, stack(0x00000000d55f0000,0x00000000d57e0000)]
+  0x000000002a2de800 JavaThread "dfa.memorychecker[4368]" daemon [_thread_blocked, id=8584, stack(0x000000007d740000,0x000000007d930000)]
+  0x000000002a2d9000 JavaThread "dfa.memorychecker[4363]" daemon [_thread_blocked, id=4388, stack(0x000000005dcf0000,0x000000005dee0000)]
+  0x000000002a2d8800 JavaThread "dfa.memorychecker[4361]" daemon [_thread_blocked, id=8124, stack(0x00000001e3280000,0x00000001e3470000)]
+  0x000000002a2d7800 JavaThread "dfa.memorychecker[4360]" daemon [_thread_blocked, id=5920, stack(0x00000001e1700000,0x00000001e18f0000)]
+  0x000000002a2d1800 JavaThread "dfa.memorychecker[4359]" daemon [_thread_blocked, id=3028, stack(0x0000000039aa0000,0x0000000039c90000)]
+  0x000000002a2d4000 JavaThread "dfa.memorychecker[4356]" daemon [_thread_blocked, id=5688, stack(0x00000001e1320000,0x00000001e1510000)]
+  0x000000002a2d3000 JavaThread "dfa.memorychecker[4355]" daemon [_thread_blocked, id=5480, stack(0x00000001dc690000,0x00000001dc880000)]
+  0x000000002a2cd000 JavaThread "dfa.memorychecker[4354]" daemon [_thread_blocked, id=8336, stack(0x00000001e0400000,0x00000001e05f0000)]
+  0x000000002a2c7000 JavaThread "dfa.memorychecker[4353]" daemon [_thread_blocked, id=8052, stack(0x00000001b1210000,0x00000001b1400000)]
+  0x000000002a2c9000 JavaThread "dfa.memorychecker[4352]" daemon [_thread_blocked, id=4816, stack(0x00000001e7200000,0x00000001e73f0000)]
+  0x000000002a2c5800 JavaThread "dfa.memorychecker[4351]" daemon [_thread_blocked, id=1044, stack(0x00000001e6e20000,0x00000001e7010000)]
+  0x000000002a2be800 JavaThread "dfa.memorychecker[4349]" daemon [_thread_blocked, id=7904, stack(0x00000001e6280000,0x00000001e6470000)]
+  0x000000002a2be000 JavaThread "dfa.memorychecker[4348]" daemon [_thread_blocked, id=3688, stack(0x00000001e5b30000,0x00000001e5d20000)]
+  0x000000002a2b2800 JavaThread "dfa.memorychecker[4347]" daemon [_thread_blocked, id=8524, stack(0x00000001e5750000,0x00000001e5940000)]
+  0x000000002a2a3800 JavaThread "dfa.memorychecker[4344]" daemon [_thread_blocked, id=8328, stack(0x0000000159bd0000,0x0000000159dc0000)]
+  0x000000002a2a0000 JavaThread "dfa.memorychecker[4346]" daemon [_thread_blocked, id=4444, stack(0x0000000153d40000,0x0000000153f30000)]
+  0x000000002a2a9800 JavaThread "dfa.memorychecker[4345]" daemon [_thread_blocked, id=3480, stack(0x00000001e5180000,0x00000001e5370000)]
+  0x000000002a2a8000 JavaThread "dfa.memorychecker[4343]" daemon [_thread_blocked, id=7088, stack(0x00000001e4f90000,0x00000001e5180000)]
+  0x000000002a2a1800 JavaThread "dfa.memorychecker[4342]" daemon [_thread_blocked, id=8744, stack(0x00000001ddce0000,0x00000001dded0000)]
+  0x000000002a2a4800 JavaThread "dfa.memorychecker[4341]" daemon [_thread_blocked, id=8888, stack(0x000000015e6f0000,0x000000015e8e0000)]
+  0x000000002a2a0800 JavaThread "dfa.memorychecker[4340]" daemon [_thread_blocked, id=8784, stack(0x00000001e4bb0000,0x00000001e4da0000)]
+  0x000000002a3eb800 JavaThread "dfa.memorychecker[4339]" daemon [_thread_blocked, id=4332, stack(0x00000001e45e0000,0x00000001e47d0000)]
+  0x000000002a3ee800 JavaThread "dfa.memorychecker[4338]" daemon [_thread_blocked, id=5452, stack(0x00000001dca70000,0x00000001dcc60000)]
+  0x000000002a3eb000 JavaThread "dfa.memorychecker[4337]" daemon [_thread_blocked, id=8596, stack(0x0000000188240000,0x0000000188430000)]
+  0x000000002a3ee000 JavaThread "dfa.memorychecker[4336]" daemon [_thread_blocked, id=3736, stack(0x0000000159fb0000,0x000000015a1a0000)]
+  0x000000002a3ea000 JavaThread "dfa.memorychecker[4335]" daemon [_thread_blocked, id=8464, stack(0x000000012dbb0000,0x000000012dda0000)]
+  0x000000002a3ed000 JavaThread "dfa.memorychecker[4334]" daemon [_thread_blocked, id=7700, stack(0x00000000fe690000,0x00000000fe880000)]
+  0x000000002a3ec800 JavaThread "dfa.memorychecker[4333]" daemon [_thread_blocked, id=8544, stack(0x0000000051b20000,0x0000000051d10000)]
+  0x000000002a3e6800 JavaThread "dfa.memorychecker[4331]" daemon [_thread_blocked, id=8792, stack(0x00000001e43f0000,0x00000001e45e0000)]
+  0x000000002a3e9800 JavaThread "dfa.memorychecker[4332]" daemon [_thread_blocked, id=8640, stack(0x000000012d0d0000,0x000000012d2c0000)]
+  0x000000002a3e5800 JavaThread "dfa.memorychecker[4330]" daemon [_thread_blocked, id=8448, stack(0x0000000038710000,0x0000000038900000)]
+  0x000000002a3e8800 JavaThread "dfa.memorychecker[4329]" daemon [_thread_blocked, id=8684, stack(0x00000000f5b70000,0x00000000f5d60000)]
+  0x000000002a3e1000 JavaThread "dfa.memorychecker[4326]" daemon [_thread_blocked, id=7924, stack(0x00000000f1a90000,0x00000000f1c80000)]
+  0x000000002a3e4000 JavaThread "dfa.memorychecker[4325]" daemon [_thread_blocked, id=7848, stack(0x00000000f2610000,0x00000000f2800000)]
+  0x000000002a3df800 JavaThread "dfa.memorychecker[4322]" daemon [_thread_blocked, id=2664, stack(0x00000001507c0000,0x00000001509b0000)]
+  0x000000002a3e2800 JavaThread "dfa.memorychecker[4323]" daemon [_thread_blocked, id=8644, stack(0x000000011ace0000,0x000000011aed0000)]
+  0x000000002a3e2000 JavaThread "dfa.memorychecker[4321]" daemon [_thread_blocked, id=4852, stack(0x00000000fe4a0000,0x00000000fe690000)]
+  0x000000002952c000 JavaThread "dfa.memorychecker[4315]" daemon [_thread_blocked, id=3904, stack(0x00000001ccfc0000,0x00000001cd1b0000)]
+  0x000000002952f000 JavaThread "dfa.memorychecker[4314]" daemon [_thread_blocked, id=7736, stack(0x0000000153b50000,0x0000000153d40000)]
+  0x0000000029528000 JavaThread "dfa.memorychecker[4313]" daemon [_thread_blocked, id=5200, stack(0x000000010b240000,0x000000010b430000)]
+  0x000000002952b000 JavaThread "dfa.memorychecker[4312]" daemon [_thread_blocked, id=5252, stack(0x00000001e4010000,0x00000001e4200000)]
+  0x000000002952a800 JavaThread "dfa.memorychecker[4311]" daemon [_thread_blocked, id=9048, stack(0x00000001114c0000,0x00000001116b0000)]
+  0x0000000029526800 JavaThread "dfa.memorychecker[4310]" daemon [_thread_blocked, id=8848, stack(0x00000001065b0000,0x00000001067a0000)]
+  0x0000000029529800 JavaThread "dfa.memorychecker[4309]" daemon [_thread_blocked, id=6312, stack(0x00000001e3e20000,0x00000001e4010000)]
+  0x0000000029523000 JavaThread "dfa.memorychecker[4305]" daemon [_thread_blocked, id=8352, stack(0x00000001e3c30000,0x00000001e3e20000)]
+  0x0000000029526000 JavaThread "dfa.memorychecker[4308]" daemon [_thread_blocked, id=8248, stack(0x000000014fb00000,0x000000014fcf0000)]
+  0x0000000029522000 JavaThread "dfa.memorychecker[4307]" daemon [_thread_blocked, id=7320, stack(0x00000001b15f0000,0x00000001b17e0000)]
+  0x0000000029525000 JavaThread "dfa.memorychecker[4306]" daemon [_thread_blocked, id=2908, stack(0x000000010b620000,0x000000010b810000)]
+  0x0000000029524800 JavaThread "dfa.memorychecker[4304]" daemon [_thread_blocked, id=5840, stack(0x00000000e8270000,0x00000000e8460000)]
+  0x000000002951e800 JavaThread "dfa.memorychecker[4303]" daemon [_thread_blocked, id=8432, stack(0x00000000d57e0000,0x00000000d59d0000)]
+  0x0000000029521800 JavaThread "dfa.memorychecker[4302]" daemon [_thread_blocked, id=4300, stack(0x00000000e23c0000,0x00000000e25b0000)]
+  0x0000000029520000 JavaThread "dfa.memorychecker[4298]" daemon [_thread_blocked, id=4792, stack(0x000000006f2f0000,0x000000006f4e0000)]
+  0x00000000291e9800 JavaThread "dfa.memorychecker[4290]" daemon [_thread_blocked, id=3372, stack(0x0000000038330000,0x0000000038520000)]
+  0x00000000291db800 JavaThread "dfa.memorychecker[4284]" daemon [_thread_blocked, id=2888, stack(0x0000000159dc0000,0x0000000159fb0000)]
+  0x00000000291dd800 JavaThread "dfa.memorychecker[4283]" daemon [_thread_blocked, id=2704, stack(0x00000001d9b00000,0x00000001d9cf0000)]
+  0x00000000291d1800 JavaThread "dfa.memorychecker[4278]" daemon [_thread_blocked, id=5024, stack(0x00000001e3090000,0x00000001e3280000)]
+  0x00000000291ce000 JavaThread "dfa.memorychecker[4277]" daemon [_thread_blocked, id=4644, stack(0x00000001e2ea0000,0x00000001e3090000)]
+  0x00000000291cd000 JavaThread "dfa.memorychecker[4276]" daemon [_thread_blocked, id=4952, stack(0x00000001e2cb0000,0x00000001e2ea0000)]
+  0x00000000291d0000 JavaThread "dfa.memorychecker[4275]" daemon [_thread_blocked, id=1352, stack(0x00000001e2ac0000,0x00000001e2cb0000)]
+  0x00000000291cc800 JavaThread "dfa.memorychecker[4273]" daemon [_thread_blocked, id=5984, stack(0x00000001e28d0000,0x00000001e2ac0000)]
+  0x00000000291c8000 JavaThread "dfa.memorychecker[4274]" daemon [_thread_blocked, id=7880, stack(0x00000001e26e0000,0x00000001e28d0000)]
+  0x00000000291cb000 JavaThread "dfa.memorychecker[4271]" daemon [_thread_blocked, id=8548, stack(0x00000001e0020000,0x00000001e0210000)]
+  0x00000000291c0000 JavaThread "dfa.memorychecker[4272]" daemon [_thread_blocked, id=6736, stack(0x00000001dfc40000,0x00000001dfe30000)]
+  0x00000000291be800 JavaThread "dfa.memorychecker[4270]" daemon [_thread_blocked, id=676, stack(0x00000001dfa50000,0x00000001dfc40000)]
+  0x00000000291b5800 JavaThread "dfa.memorychecker[4269]" daemon [_thread_blocked, id=8764, stack(0x00000001df860000,0x00000001dfa50000)]
+  0x00000000291a0000 JavaThread "dfa.memorychecker[4268]" daemon [_thread_blocked, id=7592, stack(0x00000001dea70000,0x00000001dec60000)]
+  0x000000002919f800 JavaThread "dfa.memorychecker[4267]" daemon [_thread_blocked, id=7060, stack(0x00000001de880000,0x00000001dea70000)]
+  0x000000002919e800 JavaThread "dfa.memorychecker[4266]" daemon [_thread_blocked, id=6300, stack(0x00000001de690000,0x00000001de880000)]
+  0x0000000029198800 JavaThread "dfa.memorychecker[4265]" daemon [_thread_blocked, id=6244, stack(0x00000001de4a0000,0x00000001de690000)]
+  0x000000002919b800 JavaThread "dfa.memorychecker[4264]" daemon [_thread_blocked, id=8176, stack(0x00000001de2b0000,0x00000001de4a0000)]
+  0x0000000029198000 JavaThread "dfa.memorychecker[4263]" daemon [_thread_blocked, id=4168, stack(0x00000001de0c0000,0x00000001de2b0000)]
+  0x000000002919b000 JavaThread "dfa.memorychecker[4262]" daemon [_thread_blocked, id=716, stack(0x00000001dded0000,0x00000001de0c0000)]
+  0x000000002919a000 JavaThread "dfa.memorychecker[4261]" daemon [_thread_blocked, id=628, stack(0x00000001ddaf0000,0x00000001ddce0000)]
+  0x0000000029194000 JavaThread "dfa.memorychecker[4260]" daemon [_thread_blocked, id=7104, stack(0x00000001dc880000,0x00000001dca70000)]
+  0x0000000029197000 JavaThread "dfa.memorychecker[4259]" daemon [_thread_blocked, id=3556, stack(0x00000001dacc0000,0x00000001daeb0000)]
+  0x0000000029190800 JavaThread "dfa.memorychecker[4258]" daemon [_thread_blocked, id=6724, stack(0x00000001da510000,0x00000001da700000)]
+  0x0000000029193800 JavaThread "dfa.memorychecker[4257]" daemon [_thread_blocked, id=4660, stack(0x00000001da320000,0x00000001da510000)]
+  0x0000000029192800 JavaThread "dfa.memorychecker[4256]" daemon [_thread_blocked, id=2068, stack(0x00000001da130000,0x00000001da320000)]
+  0x000000002918c800 JavaThread "dfa.memorychecker[4255]" daemon [_thread_blocked, id=5720, stack(0x00000001d9f40000,0x00000001da130000)]
+  0x000000002918f800 JavaThread "dfa.memorychecker[4254]" daemon [_thread_blocked, id=2392, stack(0x00000001b1400000,0x00000001b15f0000)]
+  0x000000002918f000 JavaThread "dfa.memorychecker[4251]" daemon [_thread_blocked, id=3584, stack(0x00000001b1020000,0x00000001b1210000)]
+  0x000000002918b000 JavaThread "dfa.memorychecker[4252]" daemon [_thread_blocked, id=216, stack(0x00000001aacb0000,0x00000001aaea0000)]
+  0x0000000029187000 JavaThread "dfa.memorychecker[4250]" daemon [_thread_blocked, id=9032, stack(0x000000019ec10000,0x000000019ee00000)]
+  0x0000000029182800 JavaThread "dfa.memorychecker[4249]" daemon [_thread_blocked, id=9120, stack(0x0000000258c90000,0x0000000258e80000)]
+  0x0000000029185800 JavaThread "dfa.memorychecker[4247]" daemon [_thread_blocked, id=212, stack(0x00000001df230000,0x00000001df420000)]
+  0x0000000029185000 JavaThread "dfa.memorychecker[4245]" daemon [_thread_blocked, id=6488, stack(0x00000001dce50000,0x00000001dd040000)]
+  0x000000002a2cc000 JavaThread "dfa.memorychecker[4242]" daemon [_thread_blocked, id=4736, stack(0x0000000258aa0000,0x0000000258c90000)]
+  0x000000002a2cf800 JavaThread "dfa.memorychecker[4244]" daemon [_thread_blocked, id=9080, stack(0x00000002588b0000,0x0000000258aa0000)]
+  0x000000002a2ca800 JavaThread "dfa.memorychecker[4246]" daemon [_thread_blocked, id=2752, stack(0x00000002586c0000,0x00000002588b0000)]
+  0x000000002a2cd800 JavaThread "dfa.memorychecker[4248]" daemon [_thread_blocked, id=3104, stack(0x00000002584d0000,0x00000002586c0000)]
+  0x000000002a2ca000 JavaThread "dfa.memorychecker[4243]" daemon [_thread_blocked, id=7332, stack(0x00000002554a0000,0x0000000255690000)]
+  0x000000002a2a9000 JavaThread "dfa.memorychecker[4231]" daemon [_thread_blocked, id=7668, stack(0x00000001dcc60000,0x00000001dce50000)]
+  0x000000002a2a3000 JavaThread "dfa.memorychecker[4225]" daemon [_thread_blocked, id=4116, stack(0x000000012dda0000,0x000000012df90000)]
+  0x000000002a2a2000 JavaThread "dfa.memorychecker[4224]" daemon [_thread_blocked, id=1052, stack(0x0000000058270000,0x0000000058460000)]
+  0x000000002a293000 JavaThread "dfa.memorychecker[4185]" daemon [_thread_blocked, id=5944, stack(0x00000001c3950000,0x00000001c3b40000)]
+  0x000000002a28d800 JavaThread "dfa.memorychecker[4181]" daemon [_thread_blocked, id=8016, stack(0x0000000049a70000,0x0000000049c60000)]
+  0x000000002a27d000 JavaThread "dfa.memorychecker[4179]" daemon [_thread_blocked, id=8960, stack(0x00000002438b0000,0x0000000243aa0000)]
+  0x000000002a27c800 JavaThread "dfa.memorychecker[4177]" daemon [_thread_blocked, id=2868, stack(0x0000000202190000,0x0000000202380000)]
+  0x000000002a27b800 JavaThread "dfa.memorychecker[4178]" daemon [_thread_blocked, id=7648, stack(0x000000003e960000,0x000000003eb50000)]
+  0x000000002a27e000 JavaThread "dfa.memorychecker[4176]" daemon [_thread_blocked, id=9192, stack(0x000000003e580000,0x000000003e770000)]
+  0x0000000029518800 JavaThread "dfa.memorychecker[4144]" daemon [_thread_blocked, id=5948, stack(0x00000001e6850000,0x00000001e6a40000)]
+  0x000000002919d000 JavaThread "dfa.memorychecker[4109]" daemon [_thread_blocked, id=8576, stack(0x0000000161c90000,0x0000000161e80000)]
+  0x0000000029195800 JavaThread "dfa.memorychecker[4108]" daemon [_thread_blocked, id=2004, stack(0x0000000189e80000,0x000000018a070000)]
+  0x0000000029195000 JavaThread "dfa.memorychecker[4106]" daemon [_thread_blocked, id=4292, stack(0x000000015a890000,0x000000015aa80000)]
+  0x000000002a2dd000 JavaThread "dfa.memorychecker[4087]" daemon [_thread_blocked, id=8304, stack(0x00000000e8fe0000,0x00000000e91d0000)]
+  0x000000002a2ce800 JavaThread "dfa.memorychecker[4073]" daemon [_thread_blocked, id=8280, stack(0x00000001e0210000,0x00000001e0400000)]
+  0x000000002a2c8800 JavaThread "dfa.memorychecker[4064]" daemon [_thread_blocked, id=8704, stack(0x000000006f5b0000,0x000000006f7a0000)]
+  0x000000002a2a6800 JavaThread "dfa.memorychecker[4053]" daemon [_thread_blocked, id=4760, stack(0x00000000f5980000,0x00000000f5b70000)]
+  0x000000002a2a6000 JavaThread "dfa.memorychecker[4052]" daemon [_thread_blocked, id=8556, stack(0x000000003f100000,0x000000003f2f0000)]
+  0x000000002a2a5000 JavaThread "dfa.memorychecker[4051]" daemon [_thread_blocked, id=9112, stack(0x00000000405a0000,0x0000000040790000)]
+  0x000000002a3e8000 JavaThread "dfa.memorychecker[3991]" daemon [_thread_blocked, id=6536, stack(0x00000001e49c0000,0x00000001e4bb0000)]
+  0x000000002a25a800 JavaThread "dfa.memorychecker[4002]" daemon [_thread_blocked, id=6532, stack(0x00000001e24f0000,0x00000001e26e0000)]
+  0x000000002a25d800 JavaThread "dfa.memorychecker[4003]" daemon [_thread_blocked, id=8732, stack(0x00000001e2300000,0x00000001e24f0000)]
+  0x000000002a259800 JavaThread "dfa.memorychecker[4004]" daemon [_thread_blocked, id=4972, stack(0x00000001e2110000,0x00000001e2300000)]
+  0x000000002a25c800 JavaThread "dfa.memorychecker[4005]" daemon [_thread_blocked, id=8800, stack(0x00000001e1ae0000,0x00000001e1cd0000)]
+  0x000000002a25c000 JavaThread "dfa.memorychecker[4006]" daemon [_thread_blocked, id=6108, stack(0x00000001e18f0000,0x00000001e1ae0000)]
+  0x000000002a25b000 JavaThread "dfa.memorychecker[4007]" daemon [_thread_blocked, id=8220, stack(0x00000001db470000,0x00000001db660000)]
+  0x000000002a3ff800 JavaThread "dfa.memorychecker[4008]" daemon [_thread_blocked, id=204, stack(0x00000001db280000,0x00000001db470000)]
+  0x000000002a3fb800 JavaThread "dfa.memorychecker[4009]" daemon [_thread_blocked, id=6320, stack(0x00000001daad0000,0x00000001dacc0000)]
+  0x000000002a3fe800 JavaThread "dfa.memorychecker[4010]" daemon [_thread_blocked, id=7292, stack(0x00000001da8e0000,0x00000001daad0000)]
+  0x000000002a3f0800 JavaThread "dfa.memorychecker[4027]" daemon [_thread_blocked, id=7524, stack(0x00000001dfe30000,0x00000001e0020000)]
+  0x0000000029533800 JavaThread "dfa.memorychecker[4030]" daemon [_thread_blocked, id=7384, stack(0x00000001df420000,0x00000001df610000)]
+  0x0000000029529000 JavaThread "dfa.memorychecker[3979]" daemon [_thread_blocked, id=7136, stack(0x00000001dd040000,0x00000001dd230000)]
+  0x000000002951a800 JavaThread "dfa.memorychecker[3971]" daemon [_thread_blocked, id=4968, stack(0x000000013ed20000,0x000000013ef10000)]
+  0x000000002951a000 JavaThread "dfa.memorychecker[3970]" daemon [_thread_blocked, id=5408, stack(0x0000000049690000,0x0000000049880000)]
+  0x000000002a294800 JavaThread "dfa.memorychecker[3969]" daemon [_thread_blocked, id=8860, stack(0x00000001d9720000,0x00000001d9910000)]
+  0x000000002a292800 JavaThread "dfa.memorychecker[3964]" daemon [_thread_blocked, id=4088, stack(0x00000001a5180000,0x00000001a5370000)]
+  0x000000002a291800 JavaThread "dfa.memorychecker[3963]" daemon [_thread_blocked, id=3296, stack(0x00000001a48a0000,0x00000001a4a90000)]
+  0x000000002a28f000 JavaThread "dfa.memorychecker[3961]" daemon [_thread_blocked, id=6664, stack(0x000000015f3a0000,0x000000015f590000)]
+  0x000000002a28d000 JavaThread "dfa.memorychecker[3957]" daemon [_thread_blocked, id=692, stack(0x0000000182e60000,0x0000000183050000)]
+  0x000000002a287800 JavaThread "dfa.memorychecker[3956]" daemon [_thread_blocked, id=2964, stack(0x00000001753f0000,0x00000001755e0000)]
+  0x000000002a28a800 JavaThread "dfa.memorychecker[3955]" daemon [_thread_blocked, id=7116, stack(0x00000001723c0000,0x00000001725b0000)]
+  0x000000002a287000 JavaThread "dfa.memorychecker[3954]" daemon [_thread_blocked, id=6620, stack(0x000000016d530000,0x000000016d720000)]
+  0x000000002a28a000 JavaThread "dfa.memorychecker[3953]" daemon [_thread_blocked, id=5916, stack(0x000000016c870000,0x000000016ca60000)]
+  0x000000002a289000 JavaThread "dfa.memorychecker[3952]" daemon [_thread_blocked, id=6460, stack(0x000000016af70000,0x000000016b160000)]
+  0x000000002a288800 JavaThread "dfa.memorychecker[3951]" daemon [_thread_blocked, id=7244, stack(0x00000001118a0000,0x0000000111a90000)]
+  0x000000002a283000 JavaThread "dfa.memorychecker[3950]" daemon [_thread_blocked, id=5356, stack(0x00000000f55a0000,0x00000000f5790000)]
+  0x000000002a286000 JavaThread "dfa.memorychecker[3949]" daemon [_thread_blocked, id=8152, stack(0x000000016ad80000,0x000000016af70000)]
+  0x000000002a282800 JavaThread "dfa.memorychecker[3948]" daemon [_thread_blocked, id=7216, stack(0x000000015ead0000,0x000000015ecc0000)]
+  0x000000002a285800 JavaThread "dfa.memorychecker[3947]" daemon [_thread_blocked, id=6212, stack(0x000000015e8e0000,0x000000015ead0000)]
+  0x000000002a284000 JavaThread "dfa.memorychecker[3946]" daemon [_thread_blocked, id=9184, stack(0x000000012d2c0000,0x000000012d4b0000)]
+  0x000000002a27e800 JavaThread "dfa.memorychecker[3945]" daemon [_thread_blocked, id=720, stack(0x000000011e890000,0x000000011ea80000)]
+  0x000000002a281800 JavaThread "dfa.memorychecker[3944]" daemon [_thread_blocked, id=1804, stack(0x0000000038520000,0x0000000038710000)]
+  0x000000002a281000 JavaThread "dfa.memorychecker[3943]" daemon [_thread_blocked, id=900, stack(0x000000011e6a0000,0x000000011e890000)]
+  0x00000000291c7000 JavaThread "dfa.memorychecker[3914]" daemon [_thread_blocked, id=8724, stack(0x000000011ea80000,0x000000011ec70000)]
+  0x00000000291c9800 JavaThread "dfa.memorychecker[3913]" daemon [_thread_blocked, id=8996, stack(0x000000011e4b0000,0x000000011e6a0000)]
+  0x00000000291c8800 JavaThread "dfa.memorychecker[3911]" daemon [_thread_blocked, id=8912, stack(0x000000011bc80000,0x000000011be70000)]
+  0x00000000291c3000 JavaThread "dfa.memorychecker[3912]" daemon [_thread_blocked, id=8716, stack(0x000000011aed0000,0x000000011b0c0000)]
+  0x00000000291c2800 JavaThread "dfa.memorychecker[3910]" daemon [_thread_blocked, id=8924, stack(0x000000011aaf0000,0x000000011ace0000)]
+  0x00000000291c5800 JavaThread "dfa.memorychecker[3909]" daemon [_thread_blocked, id=3712, stack(0x000000011a900000,0x000000011aaf0000)]
+  0x00000000291bd000 JavaThread "dfa.memorychecker[3908]" daemon [_thread_blocked, id=7596, stack(0x000000011a710000,0x000000011a900000)]
+  0x00000000291bc800 JavaThread "dfa.memorychecker[3906]" daemon [_thread_blocked, id=9116, stack(0x00000001112d0000,0x00000001114c0000)]
+  0x00000000291bf800 JavaThread "dfa.memorychecker[3905]" daemon [_thread_blocked, id=2568, stack(0x000000010b430000,0x000000010b620000)]
+  0x00000000291b8800 JavaThread "dfa.memorychecker[3903]" daemon [_thread_blocked, id=7096, stack(0x00000001067a0000,0x0000000106990000)]
+  0x00000000291ba000 JavaThread "dfa.memorychecker[3900]" daemon [_thread_blocked, id=1336, stack(0x0000000105fe0000,0x00000001061d0000)]
+  0x00000000291b5000 JavaThread "dfa.memorychecker[3901]" daemon [_thread_blocked, id=8740, stack(0x00000000fec60000,0x00000000fee50000)]
+  0x00000000291b4000 JavaThread "dfa.memorychecker[3902]" daemon [_thread_blocked, id=9016, stack(0x00000000fea70000,0x00000000fec60000)]
+  0x00000000291b6800 JavaThread "dfa.memorychecker[3899]" daemon [_thread_blocked, id=8040, stack(0x00000000dd710000,0x00000000dd900000)]
+  0x000000002986f800 JavaThread "dfa.memorychecker[3898]" daemon [_thread_blocked, id=7464, stack(0x00000000dd520000,0x00000000dd710000)]
+  0x0000000029871800 JavaThread "dfa.memorychecker[3897]" daemon [_thread_blocked, id=8992, stack(0x00000000fe880000,0x00000000fea70000)]
+  0x000000002986b800 JavaThread "dfa.memorychecker[3896]" daemon [_thread_blocked, id=6688, stack(0x00000000dd330000,0x00000000dd520000)]
+  0x000000002986b000 JavaThread "dfa.memorychecker[3895]" daemon [_thread_blocked, id=6264, stack(0x00000000f53b0000,0x00000000f55a0000)]
+  0x000000002986d000 JavaThread "dfa.memorychecker[3894]" daemon [_thread_blocked, id=8956, stack(0x00000000dd140000,0x00000000dd330000)]
+  0x000000002986c800 JavaThread "dfa.memorychecker[3892]" daemon [_thread_blocked, id=5760, stack(0x00000000f1c80000,0x00000000f1e70000)]
+  0x0000000029867000 JavaThread "dfa.memorychecker[3893]" daemon [_thread_blocked, id=8840, stack(0x00000000f18a0000,0x00000000f1a90000)]
+  0x0000000029863800 JavaThread "dfa.memorychecker[3890]" daemon [_thread_blocked, id=5700, stack(0x00000000e2f30000,0x00000000e3120000)]
+  0x000000002985d000 JavaThread "dfa.memorychecker[3884]" daemon [_thread_blocked, id=8384, stack(0x000000007cf40000,0x000000007d130000)]
+  0x0000000029857000 JavaThread "dfa.memorychecker[3877]" daemon [_thread_blocked, id=6128, stack(0x0000000058460000,0x0000000058650000)]
+  0x000000002919e000 JavaThread "dfa.memorychecker[3876]" daemon [_thread_blocked, id=5884, stack(0x0000000051740000,0x0000000051930000)]
+  0x0000000029192000 JavaThread "dfa.memorychecker[3851]" daemon [_thread_blocked, id=452, stack(0x00000002e33a0000,0x00000002e3590000)]
+  0x000000002918e000 JavaThread "dfa.memorychecker[3850]" daemon [_thread_blocked, id=2776, stack(0x00000002e31b0000,0x00000002e33a0000)]
+  0x0000000029191000 JavaThread "dfa.memorychecker[3849]" daemon [_thread_blocked, id=4548, stack(0x00000002e2fc0000,0x00000002e31b0000)]
+  0x000000002918a800 JavaThread "dfa.memorychecker[3844]" daemon [_thread_blocked, id=9088, stack(0x00000002e2dd0000,0x00000002e2fc0000)]
+  0x000000002918d800 JavaThread "dfa.memorychecker[3839]" daemon [_thread_blocked, id=5592, stack(0x00000002e2be0000,0x00000002e2dd0000)]
+  0x0000000029183800 JavaThread "dfa.memorychecker[3841]" daemon [_thread_blocked, id=9208, stack(0x00000002e29f0000,0x00000002e2be0000)]
+  0x0000000029535000 JavaThread "dfa.memorychecker[3838]" daemon [_thread_blocked, id=6008, stack(0x00000002e2800000,0x00000002e29f0000)]
+  0x0000000029534800 JavaThread "dfa.memorychecker[3836]" daemon [_thread_blocked, id=5864, stack(0x00000002e2610000,0x00000002e2800000)]
+  0x000000002952e000 JavaThread "dfa.memorychecker[3834]" daemon [_thread_blocked, id=3192, stack(0x00000002e2420000,0x00000002e2610000)]
+  0x0000000029531800 JavaThread "dfa.memorychecker[3832]" daemon [_thread_blocked, id=6444, stack(0x00000002e2230000,0x00000002e2420000)]
+  0x0000000029530800 JavaThread "dfa.memorychecker[3829]" daemon [_thread_blocked, id=3460, stack(0x00000002e2040000,0x00000002e2230000)]
+  0x0000000029530000 JavaThread "dfa.memorychecker[3827]" daemon [_thread_blocked, id=5308, stack(0x00000002e1e50000,0x00000002e2040000)]
+  0x0000000029527800 JavaThread "dfa.memorychecker[3822]" daemon [_thread_blocked, id=7764, stack(0x00000002794e0000,0x00000002796d0000)]
+  0x0000000029523800 JavaThread "dfa.memorychecker[3820]" daemon [_thread_blocked, id=6164, stack(0x0000000255d00000,0x0000000255ef0000)]
+  0x000000002a2dd800 JavaThread "dfa.memorychecker[3791]" daemon [_thread_blocked, id=896, stack(0x00000002e0af0000,0x00000002e0ce0000)]
+  0x000000002a2df000 JavaThread "dfa.memorychecker[3793]" daemon [_thread_blocked, id=8480, stack(0x00000002e0900000,0x00000002e0af0000)]
+  0x000000002a2d0000 JavaThread "dfa.memorychecker[3761]" daemon [_thread_blocked, id=7960, stack(0x00000002dea00000,0x00000002debf0000)]
+  0x000000002a2d2800 JavaThread "dfa.memorychecker[3758]" daemon [_thread_blocked, id=9092, stack(0x00000002de620000,0x00000002de810000)]
+  0x000000002a2cb800 JavaThread "dfa.memorychecker[3745]" daemon [_thread_blocked, id=7540, stack(0x0000000255b10000,0x0000000255d00000)]
+  0x000000002a2c6000 JavaThread "dfa.memorychecker[3725]" daemon [_thread_blocked, id=3896, stack(0x00000002dcee0000,0x00000002dd0d0000)]
+  0x000000002a2c1800 JavaThread "dfa.memorychecker[3721]" daemon [_thread_blocked, id=5664, stack(0x00000002dccf0000,0x00000002dcee0000)]
+  0x000000002a2c4800 JavaThread "dfa.memorychecker[3720]" daemon [_thread_blocked, id=8428, stack(0x00000002dcb00000,0x00000002dccf0000)]
+  0x000000002a2c4000 JavaThread "dfa.memorychecker[3715]" daemon [_thread_blocked, id=5496, stack(0x00000002dc910000,0x00000002dcb00000)]
+  0x000000002a2c3000 JavaThread "dfa.memorychecker[3713]" daemon [_thread_blocked, id=3680, stack(0x00000002dc720000,0x00000002dc910000)]
+  0x000000002a2c2800 JavaThread "dfa.memorychecker[3708]" daemon [_thread_blocked, id=5168, stack(0x00000002dc530000,0x00000002dc720000)]
+  0x000000002a2c1000 JavaThread "dfa.memorychecker[3702]" daemon [_thread_blocked, id=6224, stack(0x00000002dc150000,0x00000002dc340000)]
+  0x000000002a2c0000 JavaThread "dfa.memorychecker[3696]" daemon [_thread_blocked, id=8540, stack(0x00000002dbf60000,0x00000002dc150000)]
+  0x000000002a2bf800 JavaThread "dfa.memorychecker[3690]" daemon [_thread_blocked, id=4408, stack(0x00000002dbb80000,0x00000002dbd70000)]
+  0x000000002a2ba000 JavaThread "dfa.memorychecker[3689]" daemon [_thread_blocked, id=1416, stack(0x00000002db990000,0x00000002dbb80000)]
+  0x000000002a2bd000 JavaThread "dfa.memorychecker[3691]" daemon [_thread_blocked, id=2852, stack(0x00000002db7a0000,0x00000002db990000)]
+  0x000000002a2bc800 JavaThread "dfa.memorychecker[3693]" daemon [_thread_blocked, id=968, stack(0x00000002db5b0000,0x00000002db7a0000)]
+  0x000000002a2bb800 JavaThread "dfa.memorychecker[3694]" daemon [_thread_blocked, id=8660, stack(0x00000002db3c0000,0x00000002db5b0000)]
+  0x000000002a2bb000 JavaThread "dfa.memorychecker[3695]" daemon [_thread_blocked, id=8876, stack(0x00000002db1d0000,0x00000002db3c0000)]
+  0x000000002a2b6800 JavaThread "dfa.memorychecker[3697]" daemon [_thread_blocked, id=5020, stack(0x00000002dafe0000,0x00000002db1d0000)]
+  0x000000002a2b9800 JavaThread "dfa.memorychecker[3698]" daemon [_thread_blocked, id=8612, stack(0x00000002dadf0000,0x00000002dafe0000)]
+  0x000000002a2b8800 JavaThread "dfa.memorychecker[3699]" daemon [_thread_blocked, id=8628, stack(0x00000002dac00000,0x00000002dadf0000)]
+  0x000000002a2b8000 JavaThread "dfa.memorychecker[3700]" daemon [_thread_blocked, id=8460, stack(0x00000002daa10000,0x00000002dac00000)]
+  0x000000002a2b7000 JavaThread "dfa.memorychecker[3701]" daemon [_thread_blocked, id=6396, stack(0x00000002da820000,0x00000002daa10000)]
+  0x000000002a2b5800 JavaThread "dfa.memorychecker[3704]" daemon [_thread_blocked, id=8508, stack(0x00000002da440000,0x00000002da630000)]
+  0x000000002a2b5000 JavaThread "dfa.memorychecker[3706]" daemon [_thread_blocked, id=4208, stack(0x00000002da250000,0x00000002da440000)]
+  0x000000002a2b4000 JavaThread "dfa.memorychecker[3707]" daemon [_thread_blocked, id=8688, stack(0x00000002da060000,0x00000002da250000)]
+  0x000000002a2b3800 JavaThread "dfa.memorychecker[3709]" daemon [_thread_blocked, id=8676, stack(0x00000002d9e70000,0x00000002da060000)]
+  0x000000002a2af000 JavaThread "dfa.memorychecker[3710]" daemon [_thread_blocked, id=8600, stack(0x00000002d9c80000,0x00000002d9e70000)]
+  0x000000002a2b2000 JavaThread "dfa.memorychecker[3711]" daemon [_thread_blocked, id=8528, stack(0x00000002d9a90000,0x00000002d9c80000)]
+  0x000000002a2b1000 JavaThread "dfa.memorychecker[3712]" daemon [_thread_blocked, id=8308, stack(0x00000002d98a0000,0x00000002d9a90000)]
+  0x000000002a2b0800 JavaThread "dfa.memorychecker[3714]" daemon [_thread_blocked, id=8276, stack(0x00000002d96b0000,0x00000002d98a0000)]
+  0x000000002a2af800 JavaThread "dfa.memorychecker[3716]" daemon [_thread_blocked, id=8400, stack(0x00000002d94c0000,0x00000002d96b0000)]
+  0x000000002a2ab000 JavaThread "dfa.memorychecker[3717]" daemon [_thread_blocked, id=8376, stack(0x00000002d92d0000,0x00000002d94c0000)]
+  0x000000002a2ae000 JavaThread "dfa.memorychecker[3718]" daemon [_thread_blocked, id=8776, stack(0x00000002d90e0000,0x00000002d92d0000)]
+  0x000000002a2ad800 JavaThread "dfa.memorychecker[3719]" daemon [_thread_blocked, id=3240, stack(0x00000002d8ef0000,0x00000002d90e0000)]
+  0x000000002a2ac800 JavaThread "dfa.memorychecker[3722]" daemon [_thread_blocked, id=8320, stack(0x00000002d8d00000,0x00000002d8ef0000)]
+  0x000000002a2ac000 JavaThread "dfa.memorychecker[3724]" daemon [_thread_blocked, id=8416, stack(0x00000002d8b10000,0x00000002d8d00000)]
+  0x000000002a2a7800 JavaThread "dfa.memorychecker[3723]" daemon [_thread_blocked, id=6720, stack(0x00000002d8920000,0x00000002d8b10000)]
+  0x000000002a2aa800 JavaThread "dfa.memorychecker[3726]" daemon [_thread_blocked, id=8452, stack(0x00000002d8730000,0x00000002d8920000)]
+  0x00000000296d7800 JavaThread "dfa.memorychecker[3757]" daemon [_thread_blocked, id=8656, stack(0x00000002ca470000,0x00000002ca660000)]
+  0x000000002a268800 JavaThread "dfa.memorychecker[3760]" daemon [_thread_blocked, id=8532, stack(0x0000000286420000,0x0000000286610000)]
+  0x0000000029533000 JavaThread "dfa.memorychecker[3792]" daemon [_thread_blocked, id=8836, stack(0x00000001e5940000,0x00000001e5b30000)]
+  0x000000002a43f800 JavaThread "dfa.memorychecker[3818]" daemon [_thread_blocked, id=6252, stack(0x00000001d9d50000,0x00000001d9f40000)]
+  0x000000002a43f000 JavaThread "dfa.memorychecker[3819]" daemon [_thread_blocked, id=668, stack(0x00000001d9910000,0x00000001d9b00000)]
+  0x000000002a43e000 JavaThread "dfa.memorychecker[3821]" daemon [_thread_blocked, id=8712, stack(0x00000001aa550000,0x00000001aa740000)]
+  0x000000002a43c800 JavaThread "dfa.memorychecker[3823]" daemon [_thread_blocked, id=8316, stack(0x00000001a46b0000,0x00000001a48a0000)]
+  0x0000000029d56800 JavaThread "dfa.memorychecker[3824]" daemon [_thread_blocked, id=8880, stack(0x00000001a44c0000,0x00000001a46b0000)]
+  0x0000000029d56000 JavaThread "dfa.memorychecker[3825]" daemon [_thread_blocked, id=5172, stack(0x0000000189c90000,0x0000000189e80000)]
+  0x0000000029d55000 JavaThread "dfa.memorychecker[3826]" daemon [_thread_blocked, id=8828, stack(0x00000001889d0000,0x0000000188bc0000)]
+  0x0000000029d54800 JavaThread "dfa.memorychecker[3828]" daemon [_thread_blocked, id=8332, stack(0x0000000187c70000,0x0000000187e60000)]
+  0x0000000029d53800 JavaThread "dfa.memorychecker[3830]" daemon [_thread_blocked, id=8604, stack(0x0000000182a80000,0x0000000182c70000)]
+  0x0000000029d53000 JavaThread "dfa.memorychecker[3831]" daemon [_thread_blocked, id=8620, stack(0x00000001826a0000,0x0000000182890000)]
+  0x0000000029d52000 JavaThread "dfa.memorychecker[3833]" daemon [_thread_blocked, id=8236, stack(0x00000001727a0000,0x0000000172990000)]
+  0x0000000029d51800 JavaThread "dfa.memorychecker[3835]" daemon [_thread_blocked, id=8516, stack(0x000000016eff0000,0x000000016f1e0000)]
+  0x0000000029d50000 JavaThread "dfa.memorychecker[3837]" daemon [_thread_blocked, id=8484, stack(0x000000013ef10000,0x000000013f100000)]
+  0x0000000029874800 JavaThread "dfa.memorychecker[3840]" daemon [_thread_blocked, id=5732, stack(0x000000010b810000,0x000000010ba00000)]
+  0x0000000029874000 JavaThread "dfa.memorychecker[3842]" daemon [_thread_blocked, id=8420, stack(0x000000005d720000,0x000000005d910000)]
+  0x0000000029873000 JavaThread "dfa.memorychecker[3843]" daemon [_thread_blocked, id=8348, stack(0x0000000040b70000,0x0000000040d60000)]
+  0x0000000029872800 JavaThread "dfa.memorychecker[3845]" daemon [_thread_blocked, id=8668, stack(0x000000016ee00000,0x000000016eff0000)]
+  0x0000000029870000 JavaThread "dfa.memorychecker[3846]" daemon [_thread_blocked, id=8852, stack(0x000000003e390000,0x000000003e580000)]
+  0x0000000029869800 JavaThread "dfa.memorychecker[3847]" daemon [_thread_blocked, id=3244, stack(0x000000016cc50000,0x000000016ce40000)]
+  0x0000000029868800 JavaThread "dfa.memorychecker[3848]" daemon [_thread_blocked, id=8476, stack(0x0000000161e80000,0x0000000162070000)]
+  0x000000002985b000 JavaThread "dfa.memorychecker[3860]" daemon [_thread_blocked, id=8812, stack(0x000000011f210000,0x000000011f400000)]
+  0x000000002a280000 JavaThread "dfa.memorychecker[3861]" daemon [_thread_blocked, id=1092, stack(0x00000001061d0000,0x00000001063c0000)]
+  0x000000002a27f800 JavaThread "dfa.memorychecker[3667]" daemon [_thread_blocked, id=7772, stack(0x00000001063c0000,0x00000001065b0000)]
+  0x00000000296da800 JavaThread "dfa.memorychecker[3666]" daemon [_thread_blocked, id=8944, stack(0x00000000e8460000,0x00000000e8650000)]
+  0x00000000296d9000 JavaThread "dfa.memorychecker[3665]" daemon [_thread_blocked, id=2760, stack(0x00000002d6260000,0x00000002d6450000)]
+  0x00000000296d8800 JavaThread "dfa.memorychecker[3664]" daemon [_thread_blocked, id=6492, stack(0x00000002d6070000,0x00000002d6260000)]
+  0x00000000296d7000 JavaThread "dfa.memorychecker[3663]" daemon [_thread_blocked, id=7712, stack(0x00000002d5e80000,0x00000002d6070000)]
+  0x00000000296d4800 JavaThread "dfa.memorychecker[3662]" daemon [_thread_blocked, id=2080, stack(0x00000002d5c90000,0x00000002d5e80000)]
+  0x00000000296d3800 JavaThread "dfa.memorychecker[3661]" daemon [_thread_blocked, id=8024, stack(0x00000002d58b0000,0x00000002d5aa0000)]
+  0x00000000296d3000 JavaThread "dfa.memorychecker[3660]" daemon [_thread_blocked, id=6000, stack(0x00000002d56c0000,0x00000002d58b0000)]
+  0x00000000296d2000 JavaThread "dfa.memorychecker[3659]" daemon [_thread_blocked, id=6412, stack(0x00000002d54d0000,0x00000002d56c0000)]
+  0x00000000296d0800 JavaThread "dfa.memorychecker[3643]" daemon [_thread_blocked, id=7932, stack(0x00000002d50f0000,0x00000002d52e0000)]
+  0x00000000296d0000 JavaThread "dfa.memorychecker[3658]" daemon [_thread_blocked, id=4556, stack(0x00000002d4f00000,0x00000002d50f0000)]
+  0x00000000296cf000 JavaThread "dfa.memorychecker[3652]" daemon [_thread_blocked, id=6072, stack(0x00000002d4d10000,0x00000002d4f00000)]
+  0x00000000296ce800 JavaThread "dfa.memorychecker[3653]" daemon [_thread_blocked, id=3820, stack(0x00000002d4b20000,0x00000002d4d10000)]
+  0x00000000297f5000 JavaThread "dfa.memorychecker[3657]" daemon [_thread_blocked, id=5888, stack(0x00000002d4930000,0x00000002d4b20000)]
+  0x00000000297f3000 JavaThread "dfa.memorychecker[3654]" daemon [_thread_blocked, id=8088, stack(0x00000002d4740000,0x00000002d4930000)]
+  0x00000000297f0000 JavaThread "dfa.memorychecker[3656]" daemon [_thread_blocked, id=7228, stack(0x00000002d4550000,0x00000002d4740000)]
+  0x00000000297ef000 JavaThread "dfa.memorychecker[3638]" daemon [_thread_blocked, id=8028, stack(0x00000002d4360000,0x00000002d4550000)]
+  0x00000000297ed800 JavaThread "dfa.memorychecker[3655]" daemon [_thread_blocked, id=7112, stack(0x00000002d4170000,0x00000002d4360000)]
+  0x00000000297ea800 JavaThread "dfa.memorychecker[3646]" daemon [_thread_blocked, id=6392, stack(0x00000002d3ba0000,0x00000002d3d90000)]
+  0x00000000297e8800 JavaThread "dfa.memorychecker[3604]" daemon [_thread_blocked, id=4756, stack(0x0000000286bb0000,0x0000000286da0000)]
+  0x00000000297e9000 JavaThread "dfa.memorychecker[3645]" daemon [_thread_blocked, id=6596, stack(0x000000027fdc0000,0x000000027ffb0000)]
+  0x00000000297e7800 JavaThread "dfa.memorychecker[3644]" daemon [_thread_blocked, id=6888, stack(0x000000026f710000,0x000000026f900000)]
+  0x00000000297e6000 JavaThread "dfa.memorychecker[3651]" daemon [_thread_blocked, id=5912, stack(0x0000000269e30000,0x000000026a020000)]
+  0x000000002919c800 JavaThread "dfa.memorychecker[3647]" daemon [_thread_blocked, id=4544, stack(0x0000000269c40000,0x0000000269e30000)]
+  0x0000000029199800 JavaThread "dfa.memorychecker[3650]" daemon [_thread_blocked, id=3004, stack(0x00000002436c0000,0x00000002438b0000)]
+  0x0000000029196800 JavaThread "dfa.memorychecker[3635]" daemon [_thread_blocked, id=2440, stack(0x00000002434d0000,0x00000002436c0000)]
+  0x0000000029189800 JavaThread "dfa.memorychecker[3649]" daemon [_thread_blocked, id=3716, stack(0x00000001e7010000,0x00000001e7200000)]
+  0x0000000029188800 JavaThread "dfa.memorychecker[3648]" daemon [_thread_blocked, id=2756, stack(0x00000001e6c30000,0x00000001e6e20000)]
+  0x0000000029188000 JavaThread "dfa.memorychecker[3630]" daemon [_thread_blocked, id=8664, stack(0x00000001e6a40000,0x00000001e6c30000)]
+  0x0000000029186800 JavaThread "dfa.memorychecker[3642]" daemon [_thread_blocked, id=2340, stack(0x00000001e6660000,0x00000001e6850000)]
+  0x0000000029184000 JavaThread "dfa.memorychecker[3641]" daemon [_thread_blocked, id=1280, stack(0x00000001e4da0000,0x00000001e4f90000)]
+  0x0000000029182000 JavaThread "dfa.memorychecker[3640]" daemon [_thread_blocked, id=5324, stack(0x00000001e47d0000,0x00000001e49c0000)]
+  0x0000000029181000 JavaThread "dfa.memorychecker[3639]" daemon [_thread_blocked, id=7452, stack(0x00000001e1cd0000,0x00000001e1ec0000)]
+  0x00000000291f2000 JavaThread "dfa.memorychecker[3627]" daemon [_thread_blocked, id=2032, stack(0x00000001dd900000,0x00000001ddaf0000)]
+  0x00000000291f1000 JavaThread "dfa.memorychecker[3637]" daemon [_thread_blocked, id=7032, stack(0x000000019deb0000,0x000000019e0a0000)]
+  0x00000000291d5800 JavaThread "dfa.memorychecker[3636]" daemon [_thread_blocked, id=888, stack(0x0000000196fa0000,0x0000000197190000)]
+  0x00000000291e2000 JavaThread "dfa.memorychecker[3634]" daemon [_thread_blocked, id=7004, stack(0x0000000188050000,0x0000000188240000)]
+  0x00000000291d8800 JavaThread "dfa.memorychecker[3633]" daemon [_thread_blocked, id=8212, stack(0x0000000187e60000,0x0000000188050000)]
+  0x00000000291ef800 JavaThread "dfa.memorychecker[3632]" daemon [_thread_blocked, id=7968, stack(0x0000000183050000,0x0000000183240000)]
+  0x00000000291ef000 JavaThread "dfa.memorychecker[3631]" daemon [_thread_blocked, id=5668, stack(0x0000000182c70000,0x0000000182e60000)]
+  0x00000000291ed800 JavaThread "dfa.memorychecker[3629]" daemon [_thread_blocked, id=3864, stack(0x0000000182890000,0x0000000182a80000)]
+  0x00000000291ec800 JavaThread "dfa.memorychecker[3628]" daemon [_thread_blocked, id=2320, stack(0x00000001755e0000,0x00000001757d0000)]
+  0x00000000291eb000 JavaThread "dfa.memorychecker[3626]" daemon [_thread_blocked, id=7264, stack(0x000000016ca60000,0x000000016cc50000)]
+  0x00000000291c1000 JavaThread "dfa.memorychecker[3595]" daemon [_thread_blocked, id=4484, stack(0x00000000cf950000,0x00000000cfb40000)]
+  0x00000000291b3800 JavaThread "dfa.memorychecker[3586]" daemon [_thread_blocked, id=5092, stack(0x0000000060cc0000,0x0000000060eb0000)]
+  0x00000000291ea800 JavaThread "dfa.memorychecker[3585]" daemon [_thread_blocked, id=5640, stack(0x000000005db00000,0x000000005dcf0000)]
+  0x00000000291e9000 JavaThread "dfa.memorychecker[3584]" daemon [_thread_blocked, id=3476, stack(0x000000005a290000,0x000000005a480000)]
+  0x00000000291e7800 JavaThread "dfa.memorychecker[3583]" daemon [_thread_blocked, id=2884, stack(0x0000000051930000,0x0000000051b20000)]
+  0x00000000291e5000 JavaThread "dfa.memorychecker[3582]" daemon [_thread_blocked, id=4596, stack(0x0000000058080000,0x0000000058270000)]
+  0x00000000291e4800 JavaThread "dfa.memorychecker[3581]" daemon [_thread_blocked, id=3844, stack(0x0000000051d10000,0x0000000051f00000)]
+  0x00000000291e3800 JavaThread "dfa.memorychecker[3580]" daemon [_thread_blocked, id=7132, stack(0x0000000060ad0000,0x0000000060cc0000)]
+  0x0000000029580000 JavaThread "dfa.memorychecker[3579]" daemon [_thread_blocked, id=7504, stack(0x00000000e25b0000,0x00000000e27a0000)]
+  0x000000002957e000 JavaThread "dfa.memorychecker[3576]" daemon [_thread_blocked, id=9072, stack(0x0000000049c60000,0x0000000049e50000)]
+  0x000000002957a000 JavaThread "dfa.memorychecker[3571]" daemon [_thread_blocked, id=6592, stack(0x00000000305e0000,0x00000000307d0000)]
+  0x0000000029579800 JavaThread "dfa.memorychecker[3570]" daemon [_thread_blocked, id=7632, stack(0x00000000303f0000,0x00000000305e0000)]
+  0x0000000029578800 JavaThread "dfa.memorychecker[3569]" daemon [_thread_blocked, id=3552, stack(0x000000001af70000,0x000000001b160000)]
+  0x0000000029578000 JavaThread "dfa.memorychecker[3565]" daemon [_thread_blocked, id=5868, stack(0x000000002b950000,0x000000002bb40000)]
+  0x0000000029577000 JavaThread "dfa.memorychecker[3568]" daemon [_thread_blocked, id=892, stack(0x00000000ddea0000,0x00000000de090000)]
+  0x0000000029576800 JavaThread "dfa.memorychecker[3566]" daemon [_thread_blocked, id=6136, stack(0x00000000d02c0000,0x00000000d04b0000)]
+  0x0000000029575800 JavaThread "dfa.memorychecker[3567]" daemon [_thread_blocked, id=8096, stack(0x00000000cf570000,0x00000000cf760000)]
+  0x0000000029573800 JavaThread "dfa.memorychecker[3564]" daemon [_thread_blocked, id=4944, stack(0x00000000307d0000,0x00000000309c0000)]
+  0x0000000029572800 JavaThread "dfa.memorychecker[3563]" daemon [_thread_blocked, id=2656, stack(0x000000006f7a0000,0x000000006f990000)]
+  0x000000002a3fc800 JavaThread "dfa.memorychecker[3561]" daemon [_thread_blocked, id=2288, stack(0x00000000309c0000,0x0000000030bb0000)]
+  0x000000002a3f5800 JavaThread "dfa.memorychecker[3555]" daemon [_thread_blocked, id=6480, stack(0x000000005d530000,0x000000005d720000)]
+  0x000000002a3f5000 JavaThread "dfa.memorychecker[3556]" daemon [_thread_blocked, id=7720, stack(0x0000000058650000,0x0000000058840000)]
+  0x000000002986e800 JavaThread "dfa.memorychecker[3549]" daemon [_thread_blocked, id=5716, stack(0x000000003e770000,0x000000003e960000)]
+  0x0000000029866800 JavaThread "dfa.memorychecker[3550]" daemon [_thread_blocked, id=4772, stack(0x0000000030200000,0x00000000303f0000)]
+  0x000000002a445800 JavaThread "dfa.memorychecker[3487]" daemon [_thread_blocked, id=4312, stack(0x000000026fce0000,0x000000026fed0000)]
+  0x000000002986e000 JavaThread "dfa.memorychecker[3446]" daemon [_thread_blocked, id=8216, stack(0x00000001e5560000,0x00000001e5750000)]
+  0x0000000029871000 JavaThread "dfa.memorychecker[3445]" daemon [_thread_blocked, id=2956, stack(0x00000001e5370000,0x00000001e5560000)]
+  0x00000000291d1000 JavaThread "dfa.memorychecker[3335]" daemon [_thread_blocked, id=8200, stack(0x00000000e8650000,0x00000000e8840000)]
+  0x00000000291d7000 JavaThread "dfa.memorychecker[3332]" daemon [_thread_blocked, id=4868, stack(0x00000000e27a0000,0x00000000e2990000)]
+  0x00000000291ce800 JavaThread "dfa.memorychecker[3326]" daemon [_thread_blocked, id=3220, stack(0x00000000d5bc0000,0x00000000d5db0000)]
+  0x00000000291ca000 JavaThread "dfa.memorychecker[3321]" daemon [_thread_blocked, id=3508, stack(0x00000000cf760000,0x00000000cf950000)]
+  0x00000000291c6000 JavaThread "dfa.memorychecker[3317]" daemon [_thread_blocked, id=8496, stack(0x0000000070300000,0x00000000704f0000)]
+  0x00000000291b7000 JavaThread "dfa.memorychecker[3318]" daemon [_thread_blocked, id=8228, stack(0x000000006f990000,0x000000006fb80000)]
+  0x00000000291c1800 JavaThread "dfa.memorychecker[3310]" daemon [_thread_blocked, id=8252, stack(0x00000000681e0000,0x00000000683d0000)]
+  0x00000000291f3800 JavaThread "dfa.memorychecker[3311]" daemon [_thread_blocked, id=2748, stack(0x0000000067ff0000,0x00000000681e0000)]
+  0x00000000291e6800 JavaThread "dfa.memorychecker[3303]" daemon [_thread_blocked, id=3580, stack(0x0000000051550000,0x0000000051740000)]
+  0x0000000029575000 JavaThread "dfa.memorychecker[3274]" daemon [_thread_blocked, id=5804, stack(0x00000002ec110000,0x00000002ec300000)]
+  0x0000000029574000 JavaThread "dfa.memorychecker[3275]" daemon [_thread_blocked, id=7356, stack(0x00000002ebf20000,0x00000002ec110000)]
+  0x0000000029865800 JavaThread "dfa.memorychecker[3263]" daemon [_thread_blocked, id=2836, stack(0x00000002eabc0000,0x00000002eadb0000)]
+  0x0000000029862000 JavaThread "dfa.memorychecker[3262]" daemon [_thread_blocked, id=4160, stack(0x00000002ea9d0000,0x00000002eabc0000)]
+  0x000000002a260800 JavaThread "dfa.memorychecker[3232]" daemon [_thread_blocked, id=6012, stack(0x00000002e6fb0000,0x00000002e71a0000)]
+  0x000000002a25f800 JavaThread "dfa.memorychecker[3231]" daemon [_thread_blocked, id=872, stack(0x00000002e6dc0000,0x00000002e6fb0000)]
+  0x000000002a25f000 JavaThread "dfa.memorychecker[3230]" daemon [_thread_blocked, id=6948, stack(0x00000002e6bd0000,0x00000002e6dc0000)]
+  0x00000000291c4000 JavaThread "dfa.memorychecker[3089]" daemon [_thread_blocked, id=8436, stack(0x00000002d5aa0000,0x00000002d5c90000)]
+  0x00000000291da800 JavaThread "dfa.memorychecker[3065]" daemon [_thread_blocked, id=8300, stack(0x0000000173080000,0x0000000173270000)]
+  0x00000000291d2800 JavaThread "dfa.memorychecker[3066]" daemon [_thread_blocked, id=8444, stack(0x00000001725b0000,0x00000001727a0000)]
+  0x00000000291bb000 JavaThread "dfa.memorychecker[3046]" daemon [_thread_blocked, id=5956, stack(0x0000000068b70000,0x0000000068d60000)]
+  0x00000000291be000 JavaThread "dfa.memorychecker[3002]" daemon [_thread_blocked, id=5368, stack(0x000000002ae70000,0x000000002b060000)]
+  0x00000000291bb800 JavaThread "dfa.memorychecker[2997]" daemon [_thread_blocked, id=6860, stack(0x0000000058840000,0x0000000058a30000)]
+  0x000000002967c800 JavaThread "dfa.memorychecker[2996]" daemon [_thread_blocked, id=7516, stack(0x00000000cfb40000,0x00000000cfd30000)]
+  0x000000002967b800 JavaThread "dfa.memorychecker[2998]" daemon [_thread_blocked, id=4264, stack(0x00000000196c0000,0x00000000198b0000)]
+  0x0000000029679800 JavaThread "dfa.memorychecker[2994]" daemon [_thread_blocked, id=6780, stack(0x000000006fb80000,0x000000006fd70000)]
+  0x0000000029674000 JavaThread "dfa.memorychecker[2993]" daemon [_thread_blocked, id=4416, stack(0x000000005a0a0000,0x000000005a290000)]
+  0x000000002a3e3800 JavaThread "dfa.memorychecker[2898]" daemon [_thread_blocked, id=5672, stack(0x00000002432e0000,0x00000002434d0000)]
+  0x000000002a275800 JavaThread "dfa.memorychecker[2856]" daemon [_thread_blocked, id=5736, stack(0x0000000183910000,0x0000000183b00000)]
+  0x00000000291f0800 JavaThread "dfa.memorychecker[2855]" daemon [_thread_blocked, id=5000, stack(0x00000001e1f20000,0x00000001e2110000)]
+  0x00000000291e1800 JavaThread "dfa.memorychecker[2851]" daemon [_thread_blocked, id=7840, stack(0x00000001e0bc0000,0x00000001e0db0000)]
+  0x00000000291e0800 JavaThread "dfa.memorychecker[2850]" daemon [_thread_blocked, id=8752, stack(0x00000001e09d0000,0x00000001e0bc0000)]
+  0x00000000291e0000 JavaThread "dfa.memorychecker[2849]" daemon [_thread_blocked, id=4092, stack(0x00000001e07e0000,0x00000001e09d0000)]
+  0x00000000291de800 JavaThread "dfa.memorychecker[2848]" daemon [_thread_blocked, id=4828, stack(0x00000001e05f0000,0x00000001e07e0000)]
+  0x00000000291b9800 JavaThread "dfa.memorychecker[2847]" daemon [_thread_blocked, id=972, stack(0x00000001df670000,0x00000001df860000)]
+  0x00000000291b8000 JavaThread "dfa.memorychecker[2836]" daemon [_thread_blocked, id=7288, stack(0x00000001cc860000,0x00000001cca50000)]
+  0x00000000291cf800 JavaThread "dfa.memorychecker[2833]" daemon [_thread_blocked, id=3608, stack(0x00000001c3200000,0x00000001c33f0000)]
+  0x00000000291da000 JavaThread "dfa.memorychecker[2832]" daemon [_thread_blocked, id=9068, stack(0x00000001bf8f0000,0x00000001bfae0000)]
+  0x00000000291e8000 JavaThread "dfa.memorychecker[2835]" daemon [_thread_blocked, id=1560, stack(0x00000001bec30000,0x00000001bee20000)]
+  0x00000000291d9000 JavaThread "dfa.memorychecker[2830]" daemon [_thread_blocked, id=3756, stack(0x00000001b1d70000,0x00000001b1f60000)]
+  0x00000000291d4000 JavaThread "dfa.memorychecker[2804]" daemon [_thread_blocked, id=1356, stack(0x00000000494a0000,0x0000000049690000)]
+  0x00000000291d4800 JavaThread "dfa.memorychecker[2803]" daemon [_thread_blocked, id=4592, stack(0x0000000040980000,0x0000000040b70000)]
+  0x00000000297e7000 JavaThread "TimerQueue" daemon [_thread_blocked, id=6812, stack(0x00000000e8840000,0x00000000e8a30000)]
+  0x0000000029aa1800 JavaThread "EMF Reference Cleaner" daemon [_thread_blocked, id=3328, stack(0x000000002bb40000,0x000000002bd30000)]
+  0x0000000029e29800 JavaThread "AWT-Windows" daemon [_thread_in_native, id=6660, stack(0x000000002b060000,0x000000002b250000)]
+  0x00000000296c5800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=7420, stack(0x000000002ac80000,0x000000002ae70000)]
+  0x000000001e44d000 JavaThread "Service Thread" daemon [_thread_blocked, id=4488, stack(0x0000000028cd0000,0x0000000028ec0000)]
+  0x000000001e448000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=5152, stack(0x0000000028ae0000,0x0000000028cd0000)]
+  0x000000001e446800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=7888, stack(0x00000000288f0000,0x0000000028ae0000)]
+  0x000000001e445800 JavaThread "Attach Listener" daemon [_thread_blocked, id=5432, stack(0x0000000028700000,0x00000000288f0000)]
+  0x000000001e442000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5520, stack(0x0000000028510000,0x0000000028700000)]
+  0x000000001e3dc800 JavaThread "Finalizer" daemon [_thread_blocked, id=4920, stack(0x0000000028320000,0x0000000028510000)]
+  0x000000001e3d3800 JavaThread "Reference Handler" daemon [_thread_blocked, id=3776, stack(0x0000000028130000,0x0000000028320000)]
+=>0x000000001d1c5800 JavaThread "main" [_thread_in_native, id=5060, stack(0x0000000000040000,0x0000000000230000)]
+
+Other Threads:
+  0x000000001e3ca000 VMThread [stack: 0x0000000027f40000,0x0000000028130000] [id=6240]
+  0x000000001e467800 WatcherThread [stack: 0x0000000028ec0000,0x00000000290b0000] [id=312]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 225728K, used 99879K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 73% used [0x00000000b9550000,0x00000000be6ca570,0x00000000c0390000)
+  from space 112832K, 14% used [0x00000000c0390000,0x00000000c139f8e0,0x00000000c71c0000)
+  to   space 112832K, 0% used [0x00000000c71c0000,0x00000000c71c0000,0x00000000cdff0000)
+ ParOldGen       total 677248K, used 399037K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 58% used [0x000000008fff0000,0x00000000a859f608,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25013K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d400,0x00000000818a0000)
+
+Card table byte_map: [0x000000001d420000,0x000000001d6a0000] byte_map_base: 0x000000001d020080
+
+Polling page: 0x000000001cc30000
+
+Code Cache  [0x00000000213d0000, 0x0000000021730000, 0x00000000243d0000)
+ total_blobs=1592 nmethods=929 adapters=613 free_code_cache=45762Kb largest_free_block=46808576
+
+Compilation events (10 events):
+Event: 6792.582 Thread 0x000000001e448000  973             sun.misc.FloatingDecimal::roundup (87 bytes)
+Event: 6792.589 Thread 0x000000001e448000 nmethod 973 0x0000000021724c50 code [0x0000000021724da0, 0x0000000021724fd8]
+Event: 6891.393 Thread 0x000000001e446800  974             java.util.IdentityHashMap$IdentityHashMapIterator::hasNext (50 bytes)
+Event: 6891.398 Thread 0x000000001e446800 nmethod 974 0x0000000021724890 code [0x00000000217249c0, 0x0000000021724b58]
+Event: 7091.293 Thread 0x000000001e448000  975             java.util.regex.Pattern::newSlice (181 bytes)
+Event: 7091.294 Thread 0x000000001e446800  976             com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$ElementStack2::<init> (59 bytes)
+Event: 7091.303 Thread 0x000000001e446800 nmethod 976 0x0000000021724150 code [0x00000000217242c0, 0x00000000217246b8]
+Event: 7091.308 Thread 0x000000001e448000 nmethod 975 0x0000000021729d10 code [0x0000000021729ea0, 0x000000002172a330]
+Event: 7099.633 Thread 0x000000001e446800  977             com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$ElementStack::<init> (57 bytes)
+Event: 7099.637 Thread 0x000000001e446800 nmethod 977 0x0000000021729510 code [0x0000000021729680, 0x0000000021729b18]
+
+GC Heap History (10 events):
+Event: 7322.973 GC heap before
+{Heap before GC invocations=3065 (full 266):
+ PSYoungGen      total 225728K, used 101669K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 79% used [0x00000000b9550000,0x00000000bec8f4d0,0x00000000c0390000)
+  from space 112832K, 10% used [0x00000000c71c0000,0x00000000c7dca0a0,0x00000000cdff0000)
+  to   space 112832K, 0% used [0x00000000c0390000,0x00000000c0390000,0x00000000c71c0000)
+ ParOldGen       total 677248K, used 35376K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 5% used [0x000000008fff0000,0x000000009227c100,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+Event: 7322.999 GC heap after
+Heap after GC invocations=3065 (full 266):
+ PSYoungGen      total 225728K, used 106954K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 0% used [0x00000000b9550000,0x00000000b9550000,0x00000000c0390000)
+  from space 112832K, 94% used [0x00000000c0390000,0x00000000c6c02920,0x00000000c71c0000)
+  to   space 112832K, 0% used [0x00000000c71c0000,0x00000000c71c0000,0x00000000cdff0000)
+ ParOldGen       total 677248K, used 62578K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 9% used [0x000000008fff0000,0x0000000093d0cb48,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+}
+Event: 7323.261 GC heap before
+{Heap before GC invocations=3066 (full 266):
+ PSYoungGen      total 225728K, used 219850K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 100% used [0x00000000b9550000,0x00000000c0390000,0x00000000c0390000)
+  from space 112832K, 94% used [0x00000000c0390000,0x00000000c6c02920,0x00000000c71c0000)
+  to   space 112832K, 0% used [0x00000000c71c0000,0x00000000c71c0000,0x00000000cdff0000)
+ ParOldGen       total 677248K, used 62578K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 9% used [0x000000008fff0000,0x0000000093d0cb48,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+Event: 7323.287 GC heap after
+Heap after GC invocations=3066 (full 266):
+ PSYoungGen      total 225728K, used 247K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 0% used [0x00000000b9550000,0x00000000b9550000,0x00000000c0390000)
+  from space 112832K, 0% used [0x00000000c71c0000,0x00000000c71fddf0,0x00000000cdff0000)
+  to   space 112832K, 0% used [0x00000000c0390000,0x00000000c0390000,0x00000000c71c0000)
+ ParOldGen       total 677248K, used 196103K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 28% used [0x000000008fff0000,0x000000009bf71eb0,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+}
+Event: 7323.591 GC heap before
+{Heap before GC invocations=3067 (full 266):
+ PSYoungGen      total 225728K, used 100534K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 88% used [0x00000000b9550000,0x00000000bf73fd40,0x00000000c0390000)
+  from space 112832K, 0% used [0x00000000c71c0000,0x00000000c71fddf0,0x00000000cdff0000)
+  to   space 112832K, 0% used [0x00000000c0390000,0x00000000c0390000,0x00000000c71c0000)
+ ParOldGen       total 677248K, used 196103K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 28% used [0x000000008fff0000,0x000000009bf71eb0,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+Event: 7323.619 GC heap after
+Heap after GC invocations=3067 (full 266):
+ PSYoungGen      total 225728K, used 87045K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 0% used [0x00000000b9550000,0x00000000b9550000,0x00000000c0390000)
+  from space 112832K, 77% used [0x00000000c0390000,0x00000000c58917b8,0x00000000c71c0000)
+  to   space 112832K, 0% used [0x00000000c71c0000,0x00000000c71c0000,0x00000000cdff0000)
+ ParOldGen       total 677248K, used 254107K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 37% used [0x000000008fff0000,0x000000009f816e80,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+}
+Event: 7323.946 GC heap before
+{Heap before GC invocations=3068 (full 266):
+ PSYoungGen      total 225728K, used 199941K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 100% used [0x00000000b9550000,0x00000000c0390000,0x00000000c0390000)
+  from space 112832K, 77% used [0x00000000c0390000,0x00000000c58917b8,0x00000000c71c0000)
+  to   space 112832K, 0% used [0x00000000c71c0000,0x00000000c71c0000,0x00000000cdff0000)
+ ParOldGen       total 677248K, used 254107K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 37% used [0x000000008fff0000,0x000000009f816e80,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+Event: 7323.976 GC heap after
+Heap after GC invocations=3068 (full 266):
+ PSYoungGen      total 225728K, used 160K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 0% used [0x00000000b9550000,0x00000000b9550000,0x00000000c0390000)
+  from space 112832K, 0% used [0x00000000c71c0000,0x00000000c71e8000,0x00000000cdff0000)
+  to   space 112832K, 0% used [0x00000000c0390000,0x00000000c0390000,0x00000000c71c0000)
+ ParOldGen       total 677248K, used 398997K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 58% used [0x000000008fff0000,0x00000000a8595608,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25012K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d270,0x00000000818a0000)
+}
+Event: 7326.289 GC heap before
+{Heap before GC invocations=3069 (full 266):
+ PSYoungGen      total 225728K, used 113056K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 100% used [0x00000000b9550000,0x00000000c0390000,0x00000000c0390000)
+  from space 112832K, 0% used [0x00000000c71c0000,0x00000000c71e8000,0x00000000cdff0000)
+  to   space 112832K, 0% used [0x00000000c0390000,0x00000000c0390000,0x00000000c71c0000)
+ ParOldGen       total 677248K, used 398997K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 58% used [0x000000008fff0000,0x00000000a8595608,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25013K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d400,0x00000000818a0000)
+Event: 7326.296 GC heap after
+Heap after GC invocations=3069 (full 266):
+ PSYoungGen      total 225728K, used 16446K [0x00000000b9550000, 0x00000000cdff0000, 0x00000000cdff0000)
+  eden space 112896K, 0% used [0x00000000b9550000,0x00000000b9550000,0x00000000c0390000)
+  from space 112832K, 14% used [0x00000000c0390000,0x00000000c139f8e0,0x00000000c71c0000)
+  to   space 112832K, 0% used [0x00000000c71c0000,0x00000000c71c0000,0x00000000cdff0000)
+ ParOldGen       total 677248K, used 399037K [0x000000008fff0000, 0x00000000b9550000, 0x00000000b9550000)
+  object space 677248K, 58% used [0x000000008fff0000,0x00000000a859f608,0x00000000b9550000)
+ PSPermGen       total 25280K, used 25013K [0x000000007fff0000, 0x00000000818a0000, 0x000000008fff0000)
+  object space 25280K, 98% used [0x000000007fff0000,0x000000008185d400,0x00000000818a0000)
+}
+
+Deoptimization events (10 events):
+Event: 1198.747 Thread 0x000000002a3f5800 Uncommon trap -34 fr.pc 0x00000000215ec5b0
+Event: 1198.747 Thread 0x000000002a3f5800 Uncommon trap -34 fr.pc 0x00000000215ec5b0
+Event: 1198.748 Thread 0x000000002a3f5800 Uncommon trap -58 fr.pc 0x00000000215c5e58
+Event: 1198.748 Thread 0x000000002a3f5800 Uncommon trap -58 fr.pc 0x00000000215c5e58
+Event: 1198.748 Thread 0x000000002a3f5800 Uncommon trap -58 fr.pc 0x00000000215c5e58
+Event: 1198.748 Thread 0x000000002a3f5800 Uncommon trap -58 fr.pc 0x00000000215c5e58
+Event: 1200.268 Thread 0x0000000029577000 Uncommon trap -12 fr.pc 0x00000000214cfa84
+Event: 1200.269 Thread 0x0000000029574000 Uncommon trap -12 fr.pc 0x00000000214c860c
+Event: 1200.269 Thread 0x000000002a3e4000 Uncommon trap -12 fr.pc 0x000000002157629c
+Event: 5939.970 Thread 0x00000000291cb800 Uncommon trap -83 fr.pc 0x0000000021682ca4
+
+Internal exceptions (10 events):
+Event: 7250.759 Thread 0x000000001d1c5800 Threw 0x00000000bc1c3340 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7260.097 Thread 0x000000001d1c5800 Threw 0x00000000ba98d368 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7267.496 Thread 0x000000001d1c5800 Threw 0x00000000ba50f098 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7275.501 Thread 0x000000001d1c5800 Threw 0x00000000ba5d2718 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7282.939 Thread 0x000000001d1c5800 Threw 0x00000000bc243eb0 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7292.757 Thread 0x000000001d1c5800 Threw 0x00000000bc39b720 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7300.282 Thread 0x000000001d1c5800 Threw 0x00000000bc1183d8 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7309.077 Thread 0x000000001d1c5800 Threw 0x00000000ba002b08 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7316.355 Thread 0x000000001d1c5800 Threw 0x00000000be539248 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 7326.049 Thread 0x000000001d1c5800 Threw 0x00000000ba642220 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+
+Events (10 events):
+Event: 7326.138 Executing VM operation: RevokeBias
+Event: 7326.139 Executing VM operation: RevokeBias done
+Event: 7326.139 Executing VM operation: RevokeBias
+Event: 7326.140 Executing VM operation: RevokeBias done
+Event: 7326.141 Executing VM operation: RevokeBias
+Event: 7326.141 Executing VM operation: RevokeBias done
+Event: 7326.141 Executing VM operation: RevokeBias
+Event: 7326.142 Executing VM operation: RevokeBias done
+Event: 7326.288 Executing VM operation: ParallelGCFailedAllocation
+Event: 7326.296 Executing VM operation: ParallelGCFailedAllocation done
+
+
+Dynamic libraries:
+0x000000001d000000 - 0x000000001d00b000 	C:\Users\Miguel\Anaconda\python.exe
+0x00007ffe0e010000 - 0x00007ffe0e1bc000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe0ba70000 - 0x00007ffe0bbae000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffe0b2a0000 - 0x00007ffe0b3b5000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x000000001e000000 - 0x000000001e2f3000 	C:\Users\Miguel\Anaconda\python27.dll
+0x0000000061cf0000 - 0x0000000061d93000 	C:\WINDOWS\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.8387_none_08e793bfa83a89b5\MSVCR90.dll
+0x00007ffe0c270000 - 0x00007ffe0c3e7000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffe0dc20000 - 0x00007ffe0dcca000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffe0c6f0000 - 0x00007ffe0dc09000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007ffe0bc70000 - 0x00007ffe0bdc0000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffe0dd70000 - 0x00007ffe0de1a000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffe0c040000 - 0x00007ffe0c099000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007ffe0c0a0000 - 0x00007ffe0c1e1000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffe0b850000 - 0x00007ffe0ba61000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x00007ffe0bfe0000 - 0x00007ffe0c034000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x00007ffe0dd30000 - 0x00007ffe0dd66000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ffe0c3f0000 - 0x00007ffe0c542000 	C:\WINDOWS\system32\MSCTF.dll
+0x0000000180000000 - 0x000000018011f000 	C:\Users\Miguel\Anaconda\DLLs\_hashlib.pyd
+0x00007ffe0aaa0000 - 0x00007ffe0aac0000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x00007ffe0a5d0000 - 0x00007ffe0a606000 	C:\WINDOWS\system32\rsaenh.dll
+0x00007ffe0ad00000 - 0x00007ffe0ad26000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x00007ffe0b0b0000 - 0x00007ffe0b0bb000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x00007ffe0b040000 - 0x00007ffe0b0a3000 	C:\WINDOWS\SYSTEM32\bcryptPrimitives.dll
+0x000000001d1a0000 - 0x000000001d1bf000 	C:\Users\Miguel\Anaconda\DLLs\_ctypes.pyd
+0x00007ffe0c550000 - 0x00007ffe0c6e4000 	C:\WINDOWS\system32\ole32.dll
+0x00007ffe0b780000 - 0x00007ffe0b841000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x0000000000390000 - 0x000000000039f000 	C:\Users\Miguel\Anaconda\DLLs\_socket.pyd
+0x00007ffe0dcd0000 - 0x00007ffe0dd2a000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ffe0c1f0000 - 0x00007ffe0c1f9000 	C:\WINDOWS\system32\NSI.dll
+0x0000000003230000 - 0x00000000033e0000 	C:\Users\Miguel\Anaconda\DLLs\_ssl.pyd
+0x00007ffe0b3c0000 - 0x00007ffe0b59f000 	C:\WINDOWS\system32\CRYPT32.dll
+0x00007ffe0b220000 - 0x00007ffe0b231000 	C:\WINDOWS\system32\MSASN1.dll
+0x000000001ec80000 - 0x000000001eca5000 	C:\Users\Miguel\Anaconda\lib\site-packages\win32\win32security.pyd
+0x00007ffe07020000 - 0x00007ffe07036000 	C:\WINDOWS\SYSTEM32\NETAPI32.dll
+0x000000001e7a0000 - 0x000000001e7c6000 	C:\Users\Miguel\Anaconda\lib\site-packages\win32\pywintypes27.dll
+0x00007ffe0aac0000 - 0x00007ffe0aacc000 	C:\WINDOWS\SYSTEM32\netutils.dll
+0x00007ffe0ae20000 - 0x00007ffe0ae46000 	C:\WINDOWS\SYSTEM32\srvcli.dll
+0x00007ffe06fc0000 - 0x00007ffe06fd7000 	C:\WINDOWS\SYSTEM32\wkscli.dll
+0x00007ffe04c50000 - 0x00007ffe04c5c000 	C:\WINDOWS\SYSTEM32\Secur32.dll
+0x00007ffe00ca0000 - 0x00007ffe00ca3000 	C:\WINDOWS\SYSTEM32\security.dll
+0x00007ffe07040000 - 0x00007ffe07069000 	C:\WINDOWS\SYSTEM32\ntdsapi.dll
+0x00007ffe0b010000 - 0x00007ffe0b03e000 	C:\WINDOWS\SYSTEM32\SSPICLI.DLL
+0x00007ffe0a970000 - 0x00007ffe0a9af000 	C:\WINDOWS\SYSTEM32\LOGONCLI.DLL
+0x00007ffdf6140000 - 0x00007ffdf6155000 	C:\WINDOWS\system32\napinsp.dll
+0x00007ffdf6160000 - 0x00007ffdf617a000 	C:\WINDOWS\system32\pnrpnsp.dll
+0x00007ffe070a0000 - 0x00007ffe070bb000 	C:\WINDOWS\system32\NLAapi.dll
+0x00007ffe0a9b0000 - 0x00007ffe0aa09000 	C:\WINDOWS\System32\mswsock.dll
+0x00007ffe0a6d0000 - 0x00007ffe0a774000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x00007ffdf6180000 - 0x00007ffdf618d000 	C:\WINDOWS\System32\winrnr.dll
+0x00007ffdf6190000 - 0x00007ffdf61a4000 	C:\WINDOWS\system32\wshbth.dll
+0x000000001e8c0000 - 0x000000001e8e4000 	C:\Users\Miguel\Anaconda\lib\site-packages\win32\win32api.pyd
+0x00007ffe02b90000 - 0x00007ffe02b9a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00000000003b0000 - 0x00000000003c2000 	C:\Users\Miguel\Anaconda\DLLs\_sqlite3.pyd
+0x00000000033e0000 - 0x0000000003467000 	C:\Users\Miguel\Anaconda\DLLs\sqlite3.dll
+0x0000000003470000 - 0x000000000351b000 	C:\Users\Miguel\Anaconda\DLLs\unicodedata.pyd
+0x0000000003520000 - 0x0000000003579000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\libzmq.pyd
+0x0000000061c10000 - 0x0000000061ce3000 	C:\WINDOWS\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.8387_none_08e793bfa83a89b5\MSVCP90.dll
+0x00000000003f0000 - 0x00000000003fe000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\constants.pyd
+0x0000000000430000 - 0x0000000000437000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\error.pyd
+0x0000000000440000 - 0x0000000000450000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\message.pyd
+0x0000000003580000 - 0x000000000358c000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\context.pyd
+0x0000000003590000 - 0x00000000035a8000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\socket.pyd
+0x00000000035b0000 - 0x00000000035bb000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\utils.pyd
+0x00000000035c0000 - 0x00000000035cc000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\_poll.pyd
+0x00000000035d0000 - 0x00000000035d7000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\_version.pyd
+0x00000000035e0000 - 0x00000000035eb000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\backend\cython\_device.pyd
+0x00000000035f0000 - 0x00000000035fb000 	C:\Users\Miguel\Anaconda\DLLs\_multiprocessing.pyd
+0x0000000003600000 - 0x000000000360c000 	C:\Users\Miguel\Anaconda\lib\site-packages\zmq\devices\monitoredqueue.pyd
+0x000000001d110000 - 0x000000001d116000 	C:\Users\Miguel\Anaconda\DLLs\select.pyd
+0x00000000045f0000 - 0x00000000045f6000 	C:\Users\Miguel\Anaconda\lib\site-packages\tornado\speedups.pyd
+0x00007ffe056b0000 - 0x00007ffe0571b000 	C:\WINDOWS\System32\fwpuclnt.dll
+0x00007ffe00c90000 - 0x00007ffe00c9a000 	C:\Windows\System32\rasadhlp.dll
+0x00007ffe06690000 - 0x00007ffe066ba000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffe06680000 - 0x00007ffe0668a000 	C:\WINDOWS\SYSTEM32\WINNSI.DLL
+0x00007ffe096e0000 - 0x00007ffe09792000 	C:\WINDOWS\SYSTEM32\shcore.dll
+0x00000000057a0000 - 0x000000000590e000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core\multiarray.pyd
+0x0000000005910000 - 0x0000000005986000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core\umath.pyd
+0x0000000005990000 - 0x000000000654c000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core\_dotblas.pyd
+0x0000000006550000 - 0x0000000006684000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core\libiomp5md.dll
+0x00000000066b0000 - 0x00000000066de000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core\scalarmath.pyd
+0x00000000066e0000 - 0x00000000066ea000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\lib\_compiled_base.pyd
+0x0000000006860000 - 0x00000000073e8000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\linalg\lapack_lite.pyd
+0x00000000073f0000 - 0x0000000009543000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\linalg\_umath_linalg.pyd
+0x00000000066f0000 - 0x0000000006704000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\fft\fftpack_lite.pyd
+0x0000000006710000 - 0x0000000006791000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\random\mtrand.pyd
+0x00000000067a0000 - 0x00000000067d5000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\_path.pyd
+0x000000000a520000 - 0x000000000a5c5000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\ft2font.pyd
+0x00000000067e0000 - 0x0000000006821000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\_png.pyd
+0x0000000006830000 - 0x000000000683f000 	C:\Users\Miguel\Anaconda\DLLs\_tkinter.pyd
+0x0000000010000000 - 0x000000001012a000 	C:\Users\Miguel\Anaconda\DLLs\tcl85.dll
+0x0000000010220000 - 0x00000000103d5000 	C:\Users\Miguel\Anaconda\DLLs\tk85.dll
+0x00007ffe0bbb0000 - 0x00007ffe0bc66000 	C:\WINDOWS\system32\COMDLG32.dll
+0x00007ffe04ba0000 - 0x00007ffe04c44000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9600.17810_none_34ae2abd958aedeb\COMCTL32.dll
+0x000000000a600000 - 0x000000000a6de000 	C:\Users\Miguel\Anaconda\lib\site-packages\PIL\_imaging.pyd
+0x000000000a6e0000 - 0x000000000a6e9000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\_cntr.pyd
+0x000000000a6f0000 - 0x000000000a72b000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\_image.pyd
+0x000000000a750000 - 0x000000000a786000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\_tri.pyd
+0x000000000a790000 - 0x000000000a7e8000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\_qhull.pyd
+0x000000000a7f0000 - 0x000000000a841000 	C:\Users\Miguel\Anaconda\lib\site-packages\matplotlib\backends\_backend_agg.pyd
+0x000000000a730000 - 0x000000000a73d000 	C:\Users\Miguel\Anaconda\lib\site-packages\pymc\Container_values.pyd
+0x000000000b010000 - 0x000000000b01e000 	C:\Users\Miguel\Anaconda\lib\site-packages\pymc\LazyFunction.pyd
+0x000000000b020000 - 0x000000000c024000 	C:\Users\Miguel\Anaconda\lib\site-packages\pymc\flib.pyd
+0x000000000c030000 - 0x000000000c1b7000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core\libifcoremd.dll
+0x000000000c1c0000 - 0x000000000c50b000 	C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core\libmmd.dll
+0x00007ffe0b6a0000 - 0x00007ffe0b6b6000 	C:\WINDOWS\system32\imagehlp.dll
+0x000000000c7b0000 - 0x000000000c93b000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\special\_ufuncs.pyd
+0x000000000c550000 - 0x000000000c567000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\special\_ufuncs_cxx.pyd
+0x000000000c630000 - 0x000000000c6e1000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\special\specfun.pyd
+0x000000000c940000 - 0x000000000e0a9000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\linalg\_fblas.pyd
+0x000000000e0b0000 - 0x000000000f244000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\linalg\_flinalg.pyd
+0x00000000103e0000 - 0x00000000128f7000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\linalg\_flapack.pyd
+0x000000000c570000 - 0x000000000c5e3000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\special\_ellip_harm_2.pyd
+0x000000000f250000 - 0x000000000f9b4000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\integrate\_odepack.pyd
+0x000000000c6f0000 - 0x000000000c74d000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\integrate\_quadpack.pyd
+0x0000000012900000 - 0x0000000013668000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\integrate\vode.pyd
+0x000000000c5f0000 - 0x000000000c604000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\integrate\_dop.pyd
+0x0000000013670000 - 0x0000000013dd8000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\integrate\lsoda.pyd
+0x000000000c610000 - 0x000000000c619000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\stats\futil.pyd
+0x000000000c750000 - 0x000000000c75c000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\optimize\minpack2.pyd
+0x000000000f9c0000 - 0x000000000fa08000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\optimize\_lbfgsb.pyd
+0x000000000c760000 - 0x000000000c76f000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\optimize\moduleTNC.pyd
+0x000000000c770000 - 0x000000000c781000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\optimize\_cobyla.pyd
+0x000000000fa10000 - 0x000000000fa21000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\optimize\_slsqp.pyd
+0x000000000c790000 - 0x000000000c7a0000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\optimize\_minpack.pyd
+0x000000000fa30000 - 0x000000000fca8000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\sparse\_sparsetools.pyd
+0x000000000fcb0000 - 0x000000000fd21000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\sparse\_csparsetools.pyd
+0x000000000fd30000 - 0x000000000fd5c000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\sparse\csgraph\_shortest_path.pyd
+0x000000000fd60000 - 0x000000000fd7d000 	C:\Users\Miguel\Anaconda\lib\site-packages\scipy\sparse\csgraph\_tools.pyd
+
+VM Arguments:
+jvm_args: -DINTREPID_JAVA_DEBUG=false -Djava.net.useSystemProxies=true -ea -XX:MaxPermSize=256m -XX:-UseCompressedOops -Dlog4j.configuration=conf/log4j.properties -XX:OnError="C:/GeoModeller/GeoModeller2014_x64/bin/BugReport.exe"     hs_err_pid%p.log  -DINTREPID=C:/GeoModeller/GeoModeller2014_x64 -DINTREPID=C:/GeoModeller/GeoModeller2014_x64 -DDFA_MACHINE_TYPE=WIN32 -DINTREPID_TMPDIR=C:/GeoModeller/GeoModeller2014_x64/temp -DINTREPID_MEMORY=512 -DINTREPID_NODES=1 -DrotateToTrueNorth=yes -DfontPath=C:\WINDOWS/Fonts;C:/GeoModeller/GeoModeller2014_x64/font -DddfDir=C:/GeoModeller/GeoModeller2014_x64/examples/ddf -DINTREPID_GRIDMERGE_LARGE=YES -DINTREPIDDATA=C:/GeoModeller/GeoModeller2014_x64/dataset -DINTREPID_NO_BORDER=YES -DINTREPID_CONTOUR_RESOLUTION=0.001 -DINTREPID_STITCH_ENABLE_TILING=TRUE -DINTREPID_AKIMA=1 -DINTREPID_MAX_GRADIENT=2.0 -DINTREPID_MIN_GRADIENT=0.00001 -DINTREPID_FFT_SQUARE=1 -DINTREPID_FFT_ROLLOFF=30 -DINTREPID_RADIAL_MAXIMUM_NUMBER_BINS=1024 -DINTREPID_AIRY_DEPTH=32000 -DINTREPID_SCINTREX_TIMETOL=2 -DINTREPID_LINEAR_ENDPOINTS=yes -DAdjustSpectra=mrad256 -DConvolveImage=cfilter -DConvolve=cfilter -DSpreadSheet=olddbedit -Ddecorrugate=decor -Ddtrans=dtrans -DEuler=euler -DExport=export -DflightEdit=fedit -DFileManager=fmanager -DGamadj=gamadj -DGridFilter=gfilter -DGpsNavigationCorrection=gpsnav -Dgravity=gravity -DGriddingPro=jGridding -Dgridding=jGridding -Dhp_plot=hp_plot -DImport=import -DKeating=keating -DLevelling=newlevel -DlevelPro=newlevel -Dlinefilter=lfilter -DMapComposition=mapcomp -DMapPrint=mapprint -DmicroLevel=mlevel -DProfileEdit=pedit -DProfileExtract=dataset_resampler -DDatasetResampler=dataset_resampler -DProjConvert=projconv -DsurveyDistance=sdist -DStitch=stitch -Dsubsection=subset -Dulevel=ulevel -Dvhbge=vhbge -DvhbgeSpectra=vhbgesp -DWormE=worme -DINTREPIDLOG=C:/GeoModeller/GeoModeller2014_x64/temp/WIN32.Miguel.log -DPATH=C:/GeoModeller/GeoModeller2014_x64/bin;C:/GeoModeller/GeoModeller2014_x64/bin/client;C:/GeoModeller/GeoModeller2014_x64/bin/server -Djava.library.path=C:/GeoModeller/GeoModeller2014_x64/bin;C:/GeoModeller/GeoModeller2014_x64/bin/client;C:/GeoModeller/GeoModeller2014_x64/bin/server 
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+PATH=C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared; C:\Users\Miguel\Anaconda;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\TDM-GCC-64\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Miguel\Anaconda\Lib\site-packages\pynoddy-0.2-py2.7.egg\noddy;C:\Users\Miguel\Anaconda;C:\Users\Miguel\Anaconda\Scripts;C:\PROGRA~2\GRAPHV~1.38\bin;C:\Program Files\FFMPEG\bin;C:\GeoModeller\GeoModeller2014_x64\bin;C:\Users\Miguel\workspace\pynoddy\noddy;C:\GeoModeller\GeoModeller2014_x64\bin\server;C:\Users\Miguel\AppData\Local\atom\bin
+USERNAME=Miguel
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4057608k(138448k free), swap 16640520k(4924k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.21-b01) for windows-amd64 JRE (1.7.0_21-b11), built on Apr  4 2013 08:11:28 by "java_re" with unknown MS VC++:1600
+
+time: Tue Sep 01 21:50:04 2015
+elapsed time: 7329 seconds
+

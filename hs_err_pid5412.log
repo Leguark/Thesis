@@ -1,0 +1,274 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 286176 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:328), pid=5412, tid=1084
+#
+# JRE version: 7.0_21-b11
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.21-b01 mixed mode windows-amd64 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000006cf12d1800):  JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=1084, stack(0x0000006cf2980000,0x0000006cf2a80000)]
+
+Stack: [0x0000006cf2980000,0x0000006cf2a80000]
+
+Current CompileTask:
+C2:   2645   54             sun.font.TrueTypeFont::initNames (370 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000006cf3220800 JavaThread "AWT-EventQueue-0" [_thread_in_Java, id=6268, stack(0x0000006cf7020000,0x0000006cf7120000)]
+  0x0000006cf3220000 JavaThread "AWT-Windows" daemon [_thread_in_native, id=1368, stack(0x0000006cf6e20000,0x0000006cf6f20000)]
+  0x0000006cf321b000 JavaThread "AWT-Shutdown" [_thread_blocked, id=2328, stack(0x0000006cf6d20000,0x0000006cf6e20000)]
+  0x0000006cf321a800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=9820, stack(0x0000006cf62c0000,0x0000006cf63c0000)]
+  0x0000006cf12e2800 JavaThread "Service Thread" daemon [_thread_blocked, id=8064, stack(0x0000006cf2a80000,0x0000006cf2b80000)]
+=>0x0000006cf12d1800 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=1084, stack(0x0000006cf2980000,0x0000006cf2a80000)]
+  0x0000006cf12c7000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=1448, stack(0x0000006cf2880000,0x0000006cf2980000)]
+  0x0000006cf12c6000 JavaThread "Attach Listener" daemon [_thread_blocked, id=7276, stack(0x0000006cf2780000,0x0000006cf2880000)]
+  0x0000006cf12c2800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=8432, stack(0x0000006cf2680000,0x0000006cf2780000)]
+  0x0000006cf125d000 JavaThread "Finalizer" daemon [_thread_blocked, id=7712, stack(0x0000006cf2580000,0x0000006cf2680000)]
+  0x0000006cf1254000 JavaThread "Reference Handler" daemon [_thread_blocked, id=2984, stack(0x0000006cf2480000,0x0000006cf2580000)]
+  0x0000006c9c736800 JavaThread "main" [_thread_blocked, id=3708, stack(0x0000006c9ab80000,0x0000006c9ac80000)]
+
+Other Threads:
+  0x0000006cf124a800 VMThread [stack: 0x0000006cf2380000,0x0000006cf2480000] [id=9564]
+  0x0000006cf1315800 WatcherThread [stack: 0x0000006cf2b80000,0x0000006cf2c80000] [id=7896]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 18496K, used 13385K [0x0000006cd8e50000, 0x0000006cda2f0000, 0x0000006ced8f0000)
+  eden space 15872K, 84% used [0x0000006cd8e50000,0x0000006cd9b62498,0x0000006cd9dd0000)
+  from space 2624K, 0% used [0x0000006cda060000,0x0000006cda060000,0x0000006cda2f0000)
+  to   space 2624K, 0% used [0x0000006cd9dd0000,0x0000006cd9dd0000,0x0000006cda060000)
+ ParOldGen       total 42304K, used 0K [0x0000006caf8f0000, 0x0000006cb2240000, 0x0000006cd8e50000)
+  object space 42304K, 0% used [0x0000006caf8f0000,0x0000006caf8f0000,0x0000006cb2240000)
+ PSPermGen       total 21248K, used 7421K [0x0000006c9f8f0000, 0x0000006ca0db0000, 0x0000006caf8f0000)
+  object space 21248K, 34% used [0x0000006c9f8f0000,0x0000006ca002f5b8,0x0000006ca0db0000)
+
+Card table byte_map: [0x0000006ced8f0000,0x0000006cedb70000] byte_map_base: 0x0000006cb73f3880
+
+Polling page: 0x0000006c9af40000
+
+Code Cache  [0x0000006c9c830000, 0x0000006c9caa0000, 0x0000006c9f830000)
+ total_blobs=453 nmethods=55 adapters=349 free_code_cache=48549Kb largest_free_block=49699456
+
+Compilation events (10 events):
+Event: 2.612 Thread 0x0000006cf12c7000 nmethod 51 0x0000006c9c8c4c50 code [0x0000006c9c8c4d80, 0x0000006c9c8c4dd8]
+Event: 2.613 Thread 0x0000006cf12d1800 nmethod 50 0x0000006c9c8c4890 code [0x0000006c9c8c49e0, 0x0000006c9c8c4af8]
+Event: 2.614 Thread 0x0000006cf12c7000   52             java.nio.ByteBufferAsIntBufferB::get (16 bytes)
+Event: 2.614 Thread 0x0000006cf12d1800   53             java.nio.ByteBufferAsIntBufferB::ix (9 bytes)
+Event: 2.614 Thread 0x0000006cf12d1800 nmethod 53 0x0000006c9c8c4690 code [0x0000006c9c8c47c0, 0x0000006c9c8c4818]
+Event: 2.616 Thread 0x0000006cf12c7000 nmethod 52 0x0000006c9c8c4250 code [0x0000006c9c8c43a0, 0x0000006c9c8c44f8]
+Event: 2.630 Thread 0x0000006cf12d1800   54             sun.font.TrueTypeFont::initNames (370 bytes)
+Event: 2.635 Thread 0x0000006cf12c7000   55             java.nio.Buffer::hasRemaining (17 bytes)
+Event: 2.635 Thread 0x0000006cf12c7000 nmethod 55 0x0000006c9c8c4050 code [0x0000006c9c8c4180, 0x0000006c9c8c41d8]
+Event: 2.637 Thread 0x0000006cf12c7000   56   !         sun.nio.cs.UnicodeDecoder::decodeLoop (326 bytes)
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (1 events):
+Event: 1.968 Thread 0x0000006c9c736800 Uncommon trap -34 fr.pc 0x0000006c9c8af7cc
+
+Internal exceptions (10 events):
+Event: 1.890 Thread 0x0000006c9c736800 Threw 0x0000006cd9791f28 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 1.892 Thread 0x0000006c9c736800 Threw 0x0000006cd979d0f0 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 1.911 Thread 0x0000006c9c736800 Threw 0x0000006cd97a8478 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 1.913 Thread 0x0000006c9c736800 Threw 0x0000006cd97b3a40 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 1.914 Thread 0x0000006c9c736800 Threw 0x0000006cd97bf0f0 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 1.926 Thread 0x0000006c9c736800 Threw 0x0000006cd97d6b38 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 1.928 Thread 0x0000006c9c736800 Threw 0x0000006cd97dc660 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 1.967 Thread 0x0000006c9c736800 Threw 0x0000006cd97e7040 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jni.cpp:716
+Event: 2.045 Thread 0x0000006c9c736800 Threw 0x0000006cd9800528 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 2.057 Thread 0x0000006cf3220800 Threw 0x0000006cd9899480 at C:\jdk7u2_64p\jdk7u21\hotspot\src\share\vm\prims\jni.cpp:716
+
+Events (10 events):
+Event: 2.436 loading class 0x0000006cf12717d0
+Event: 2.436 loading class 0x0000006cf127dd60
+Event: 2.436 loading class 0x0000006cf127dd60 done
+Event: 2.436 loading class 0x0000006cf12717d0 done
+Event: 2.437 loading class 0x0000006cf12bb930
+Event: 2.437 loading class 0x0000006cf320a2a0
+Event: 2.437 loading class 0x0000006cf320a2a0 done
+Event: 2.437 loading class 0x0000006cf12bb930 done
+Event: 2.597 loading class 0x0000006cf32131e0
+Event: 2.597 loading class 0x0000006cf32131e0 done
+
+
+Dynamic libraries:
+0x00007ff744240000 - 0x00007ff744252000 	C:\GeoModeller\GeoModeller2014_x64\bin\BugReport.exe
+0x00007fff59f00000 - 0x00007fff5a0ac000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff57590000 - 0x00007fff576ce000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007fff57130000 - 0x00007fff57245000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007fff3c150000 - 0x00007fff3c29f000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKdfaCommon.dll
+0x00007fff3df20000 - 0x00007fff3dff4000 	C:\WINDOWS\SYSTEM32\MSVCR110.dll
+0x00007fff48ee0000 - 0x00007fff48f02000 	C:\GeoModeller\GeoModeller2014_x64\bin\modules.dll
+0x00007fff50f60000 - 0x00007fff50f70000 	C:\GeoModeller\GeoModeller2014_x64\bin\token.dll
+0x00007fff4baf0000 - 0x00007fff4bb10000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfajni.dll
+0x00007fff45cf0000 - 0x00007fff45d67000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfaparser.dll
+0x00007fff43ae0000 - 0x00007fff43b39000 	C:\GeoModeller\GeoModeller2014_x64\bin\application.dll
+0x00007fff57b30000 - 0x00007fff57ca7000 	C:\WINDOWS\system32\USER32.dll
+0x00007fff40e60000 - 0x00007fff40f07000 	C:\WINDOWS\SYSTEM32\MSVCP110.dll
+0x00007fff4bb10000 - 0x00007fff4bb4c000 	C:\GeoModeller\GeoModeller2014_x64\bin\tbb.dll
+0x0000000180000000 - 0x000000018001a000 	C:\GeoModeller\GeoModeller2014_x64\bin\pthreadVC2.dll
+0x00007fff57cb0000 - 0x00007fff591c9000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007fff59230000 - 0x00007fff59237000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007fff59e50000 - 0x00007fff59efa000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x0000000012000000 - 0x0000000012263000 	C:\GeoModeller\GeoModeller2014_x64\bin\xerces-c_3_1.dll
+0x00007fff47bf0000 - 0x00007fff47c7f000 	C:\GeoModeller\GeoModeller2014_x64\bin\unixtool.dll
+0x00007fff50550000 - 0x00007fff505f4000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9600.17810_none_34ae2abd958aedeb\COMCTL32.dll
+0x00007fff576d0000 - 0x00007fff57791000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x00007fff59680000 - 0x00007fff597d0000 	C:\WINDOWS\system32\GDI32.dll
+0x00007fff577a0000 - 0x00007fff577fa000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007fff59260000 - 0x00007fff5930a000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007fff597d0000 - 0x00007fff599e1000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x00007fff59610000 - 0x00007fff59664000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x00007fff593d0000 - 0x00007fff59429000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007fff59ba0000 - 0x00007fff59ce1000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007fff4d560000 - 0x00007fff4d569000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fff52080000 - 0x00007fff520aa000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007fff59670000 - 0x00007fff59679000 	C:\WINDOWS\system32\NSI.dll
+0x00007fff52460000 - 0x00007fff5246a000 	C:\WINDOWS\SYSTEM32\WINNSI.DLL
+0x00007fff57940000 - 0x00007fff57976000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007fff59cf0000 - 0x00007fff59e42000 	C:\WINDOWS\system32\MSCTF.dll
+0x0000000058f00000 - 0x0000000059621000 	C:\GeoModeller\GeoModeller2014_x64\bin\server\jvm.dll
+0x00007fff52290000 - 0x00007fff522b2000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x0000000059da0000 - 0x0000000059e71000 	C:\GeoModeller\GeoModeller2014_x64\bin\MSVCR100.dll
+0x00007fff521b0000 - 0x00007fff521da000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007fff57540000 - 0x00007fff5758f000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x00007fff55e50000 - 0x00007fff55e78000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x00007fff2f6d0000 - 0x00007fff2f6f5000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfa2sunjvm.dll
+0x000000005a170000 - 0x000000005a17f000 	C:\GeoModeller\GeoModeller2014_x64\bin\verify.dll
+0x000000005a140000 - 0x000000005a168000 	C:\GeoModeller\GeoModeller2014_x64\bin\java.dll
+0x000000005a120000 - 0x000000005a135000 	C:\GeoModeller\GeoModeller2014_x64\bin\zip.dll
+0x00007fff2ed80000 - 0x00007fff2ed9f000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfajapp.dll
+0x00007fff2edc0000 - 0x00007fff2ef8b000 	C:\GeoModeller\GeoModeller2014_x64\bin\swigjni.dll
+0x00007fff3d490000 - 0x00007fff3d6b7000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKernel.dll
+0x00007fff397b0000 - 0x00007fff399f5000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkCommon.dll
+0x00007fff36bf0000 - 0x00007fff36ee2000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkFiltering.dll
+0x00007fff48a70000 - 0x00007fff48a94000 	C:\GeoModeller\GeoModeller2014_x64\bin\urlpath.dll
+0x00007fff40b50000 - 0x00007fff40b9e000 	C:\GeoModeller\GeoModeller2014_x64\bin\Misc.dll
+0x00007fff37580000 - 0x00007fff37ca5000 	C:\GeoModeller\GeoModeller2014_x64\bin\ioclass.dll
+0x00007fff3a980000 - 0x00007fff3aa90000 	C:\GeoModeller\GeoModeller2014_x64\bin\proj.dll
+0x00007fff47bb0000 - 0x00007fff47be9000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfageom.dll
+0x00007fff321f0000 - 0x00007fff32253000 	C:\GeoModeller\GeoModeller2014_x64\bin\iosubset.dll
+0x00007fff2d6c0000 - 0x00007fff2d892000 	C:\GeoModeller\GeoModeller2014_x64\bin\importseismiclib.dll
+0x00007fff4fe50000 - 0x00007fff4fed2000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x00007fff468d0000 - 0x00007fff4690f000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtksys.dll
+0x00007fff3d410000 - 0x00007fff3d424000 	C:\GeoModeller\GeoModeller2014_x64\bin\datalib.dll
+0x00007fff4ba90000 - 0x00007fff4baae000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfazlib-1_2_3.dll
+0x00007fff488c0000 - 0x00007fff488f8000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfapng-1_5_13.dll
+0x00007fff39a00000 - 0x00007fff39ae1000 	C:\GeoModeller\GeoModeller2014_x64\bin\netcdf4.dll
+0x00007fff4bf90000 - 0x00007fff4bfa0000 	C:\GeoModeller\GeoModeller2014_x64\bin\dbase3.dll
+0x00007fff48020000 - 0x00007fff4806b000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfajpeg-8d.dll
+0x00007fff3c0f0000 - 0x00007fff3c149000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfatiff.dll
+0x00007fff48590000 - 0x00007fff485b6000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfageotiff.dll
+0x00007fff37070000 - 0x00007fff37576000 	C:\GeoModeller\GeoModeller2014_x64\bin\protobuf_dfataskmanager.dll
+0x00007fff367e0000 - 0x00007fff36bf0000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkIO.dll
+0x00007fff36680000 - 0x00007fff367de000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfamitab.dll
+0x00007fff3a720000 - 0x00007fff3a76e000 	C:\GeoModeller\GeoModeller2014_x64\bin\audit.dll
+0x00007fff40f10000 - 0x00007fff41072000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKMath.dll
+0x00007fff43b40000 - 0x00007fff43c35000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKG3d.dll
+0x00007fff34b50000 - 0x00007fff35baf000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKEG.dll
+0x00007fff3a7f0000 - 0x00007fff3a97d000 	C:\GeoModeller\GeoModeller2014_x64\bin\TK3deditbase.dll
+0x00007fff48180000 - 0x00007fff481a1000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkDICOMParser.dll
+0x00007fff31ae0000 - 0x00007fff31ba6000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkNetCDF.dll
+0x00007fff495d0000 - 0x00007fff495f0000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkNetCDF_cxx.dll
+0x00007fff3de20000 - 0x00007fff3de38000 	C:\GeoModeller\GeoModeller2014_x64\bin\LSDyna.dll
+0x00007fff31a50000 - 0x00007fff31adf000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkmetaio.dll
+0x00007fff3bad0000 - 0x00007fff3baf4000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkpng.dll
+0x00007fff3d770000 - 0x00007fff3d785000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkzlib.dll
+0x00007fff396a0000 - 0x00007fff396c7000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkjpeg.dll
+0x00007fff319f0000 - 0x00007fff31a41000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtktiff.dll
+0x00007fff35ff0000 - 0x00007fff36013000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkexpat.dll
+0x00007fff319c0000 - 0x00007fff319e1000 	C:\WINDOWS\SYSTEM32\AVIFIL32.dll
+0x00007fff31960000 - 0x00007fff319b2000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfacpl.dll
+0x00007fff416e0000 - 0x00007fff4174a000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKG2d.dll
+0x00007fff396d0000 - 0x00007fff397a3000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKBRep.dll
+0x00007fff363b0000 - 0x00007fff36676000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKV3d.dll
+0x00007fff361d0000 - 0x00007fff363a5000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKService.dll
+0x00007fff36f50000 - 0x00007fff37066000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKV2d.dll
+0x00007fff34960000 - 0x00007fff34b50000 	C:\GeoModeller\GeoModeller2014_x64\bin\TK3deditdrivers.dll
+0x00007fff34760000 - 0x00007fff34958000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKTopAlgo.dll
+0x00007fff343d0000 - 0x00007fff34751000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKGeomAlgo.dll
+0x00007fff36020000 - 0x00007fff361c3000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKBO.dll
+0x00007fff340a0000 - 0x00007fff343cc000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKBool.dll
+0x00007fff33c70000 - 0x00007fff34099000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKGeomBase.dll
+0x00007fff3bb00000 - 0x00007fff3bb53000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKPrim.dll
+0x00007fff33940000 - 0x00007fff33c67000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKIGES.dll
+0x00007fff336e0000 - 0x00007fff33931000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKXSBase.dll
+0x00007fff33490000 - 0x00007fff336df000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKSTEP.dll
+0x00007fff33270000 - 0x00007fff33482000 	C:\GeoModeller\GeoModeller2014_x64\bin\mathutil.dll
+0x00007fff3a770000 - 0x00007fff3a7e2000 	C:\GeoModeller\GeoModeller2014_x64\bin\dfamodel.dll
+0x00007fff4b090000 - 0x00007fff4b0a1000 	C:\GeoModeller\GeoModeller2014_x64\bin\parallelutils.dll
+0x00007fff35cd0000 - 0x00007fff35d91000 	C:\GeoModeller\GeoModeller2014_x64\bin\adobeprc-api.dll
+0x00007fff32d80000 - 0x00007fff33269000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkGraphics.dll
+0x00007fff329d0000 - 0x00007fff32d7d000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkRendering.dll
+0x00007fff32870000 - 0x00007fff329cb000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkWidgets.dll
+0x000000006acc0000 - 0x000000006ad33000 	C:\GeoModeller\GeoModeller2014_x64\bin\libgmp-10.dll
+0x000000006f540000 - 0x000000006f5a1000 	C:\GeoModeller\GeoModeller2014_x64\bin\libmpfr-4.dll
+0x00007fff4b5b0000 - 0x00007fff4b5bf000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKjcas.dll
+0x00007fff32810000 - 0x00007fff32863000 	C:\GeoModeller\GeoModeller2014_x64\bin\CGAL-vc110-mt-4.3.dll
+0x00007fff32260000 - 0x00007fff32802000 	C:\GeoModeller\GeoModeller2014_x64\bin\griddinglib.dll
+0x00007fff31bb0000 - 0x00007fff321e4000 	C:\GeoModeller\GeoModeller2014_x64\bin\exchange.dll
+0x00007fff493e0000 - 0x00007fff4950b000 	C:\WINDOWS\SYSTEM32\OPENGL32.dll
+0x00007fff2f750000 - 0x00007fff2f956000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkhdf5.dll
+0x00007fff30a70000 - 0x00007fff30a9d000 	C:\GeoModeller\GeoModeller2014_x64\bin\vtkhdf5_hl.dll
+0x00007fff59a00000 - 0x00007fff59b94000 	C:\WINDOWS\system32\ole32.dll
+0x00007fff35cb0000 - 0x00007fff35ccc000 	C:\WINDOWS\SYSTEM32\MSACM32.dll
+0x00007fff30a40000 - 0x00007fff30a69000 	C:\WINDOWS\SYSTEM32\MSVFW32.dll
+0x00007fff31870000 - 0x00007fff3195f000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKHLR.dll
+0x00007fff317e0000 - 0x00007fff31866000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKMesh.dll
+0x00007fff57880000 - 0x00007fff57936000 	C:\WINDOWS\system32\COMDLG32.dll
+0x00007fff315c0000 - 0x00007fff317d6000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKShHealing.dll
+0x00007fff314a0000 - 0x00007fff315b1000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKOffset.dll
+0x00007fff31400000 - 0x00007fff31497000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKSTEPAttr.dll
+0x00007fff31340000 - 0x00007fff313f4000 	C:\GeoModeller\GeoModeller2014_x64\bin\TKSTEP209.dll
+
+VM Arguments:
+jvm_args: -DINTREPID_JAVA_DEBUG=false -Djava.net.useSystemProxies=true -ea -XX:MaxPermSize=256m -XX:-UseCompressedOops -Dlog4j.configuration=conf/log4j.properties -XX:OnError="C:/GeoModeller/GeoModeller2014_x64/bin/BugReport.exe"     hs_err_pid%p.log  -DALLUSERSPROFILE=C:\ProgramData -DAPPDATA=C:\Users\Miguel\AppData\Roaming -DCLICOLOR=1 -DCOMMONPROGRAMFILES=C:\Program Files\Common Files -DCOMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files -DCOMMONPROGRAMW6432=C:\Program Files\Common Files -DCOMPUTERNAME=PORTATIL-MIGUEL -DCOMSPEC=C:\WINDOWS\system32\cmd.exe -DFP_NO_HOST_CHECK=NO -DGIT_PAGER=cat -DHOMEDRIVE=C: -DHOMEPATH=\Users\Miguel -DINTREPID=C:\GeoModeller\GeoModeller2014_x64\ -DIPY_INTERRUPT_EVENT=1456 -DJPY_INTERRUPT_EVENT=1456 -DJPY_PARENT_PID=1404 -DLOCALAPPDATA=C:\Users\Miguel\AppData\Local -DLOGONSERVER=\\MicrosoftAccount -DNUMBER_OF_PROCESSORS=4 -DOS=Windows_NT -DPAGER=cat -DPATH=C:/GeoModeller/GeoModeller2014_x64/bin;C:/GeoModeller/GeoModeller2014_x64/bin/client;C:/GeoModeller/GeoModeller2014_x64/bin/server;C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared; C:\Users\Miguel\Anaconda;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\TDM-GCC-64\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Miguel\Anaconda\Lib\site-packages\pynoddy-0.2-py2.7.egg\noddy;C:\Users\Miguel\Anaconda;C:\Users\Miguel\Anaconda\Scripts;C:\PROGRA~2\GRAPHV~1.38\bin;C:\Program Files\FFMPEG\bin;C:\GeoModeller\GeoModeller2014_x64\bin;C:\Users\Miguel\workspace\pynoddy\noddy;C:\GeoModeller\GeoModeller2014_x64\bin\server;C:\Users\Miguel\AppData\Local\atom\bin -DPATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC -DPROCESSOR_ARCHITECTURE=AMD64 -DPROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel -DPROCESSOR_LEVEL=6 -DPROCESSOR_REVISION=3a09 -DPROGRAMDATA=C:\ProgramData -DPROGRAMFILES=C:\Program Files -DPROGRAMFILES(X86)=C:\Program Files (x86) -DPROGRAMW6432=C:\Program Files -DPSMODULEPATH=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\ -DPUBLIC=C:\Users\Public -DSESSIONNAME=Console -DSYSTEMDRIVE=C: -DSYSTEMROOT=C:\WINDOWS -DTCL_LIBRARY=C:\Users\Miguel\Anaconda\tcl\tcl8.5 -DTEMP=C:\Users\Miguel\AppData\Local\Temp -DTERM=xterm-color -DTIX_LIBRARY=C:\Users\Miguel\Anaconda\tcl\tix8.4.3 -DTK_LIBRARY=C:\Users\Miguel\Anaconda\tcl\tk8.5 -DTMP=C:\Users\Miguel\AppData\Local\Temp -DUSERDOMAIN=PORTATIL-MIGUEL -DUSERDOMAIN_ROAMINGPROFILE=PORTATIL-MIGUEL -DUSERNAME=Miguel -DUSERPROFILE=C:\Users\Miguel -DVS100COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\ -DVS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\ -DWINDIR=C:\WINDOWS -D__KMP_REGISTERED_LIB_7504=000000000664D410-cafe3039-libiomp5md.dll -DGEOMODELLER=1 -Djava.launcher=DFA Java Launch Technology -Djava.library.path=C:/GeoModeller/GeoModeller2014_x64/bin;C:/GeoModeller/GeoModeller2014_x64/bin/client;C:/GeoModeller/GeoModeller2014_x64/bin/server 
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+PATH=C:\Users\Miguel\Anaconda\lib\site-packages\numpy\core;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared; C:\Users\Miguel\Anaconda;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\TDM-GCC-64\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;C:\Users\Miguel\Anaconda\Lib\site-packages\pynoddy-0.2-py2.7.egg\noddy;C:\Users\Miguel\Anaconda;C:\Users\Miguel\Anaconda\Scripts;C:\PROGRA~2\GRAPHV~1.38\bin;C:\Program Files\FFMPEG\bin;C:\GeoModeller\GeoModeller2014_x64\bin;C:\Users\Miguel\workspace\pynoddy\noddy;C:\GeoModeller\GeoModeller2014_x64\bin\server;C:\Users\Miguel\AppData\Local\atom\bin
+USERNAME=Miguel
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4057608k(220616k free), swap 16640520k(5212k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.21-b01) for windows-amd64 JRE (1.7.0_21-b11), built on Apr  4 2013 08:11:28 by "java_re" with unknown MS VC++:1600
+
+time: Tue Sep 01 15:00:47 2015
+elapsed time: 2 seconds
+

@@ -1,0 +1,13 @@
+digraph G {
+SM_Atley_Ori_E_a;
+SM_Sand_Ori_W_a;
+SM_Sand_Ori_C_a;
+SM_Sand_Ori_E_a;
+SM_Atley_Ori_C_a;
+SM_Atley_Ori_W_a;
+BIF_Atley_Ori_E_a;
+SM_Seis_Ori_C_a;
+SM_Seis_Ori_E_a;
+BIF_Atley_Ori_W_a;
+SM_Seis_Ori_W_a;
+}

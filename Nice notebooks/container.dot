@@ -1,19 +1,11 @@
 digraph G {
-thickness_layer2 [shape=invtriangle];
-beta;
-beta -> thickness_layer2  [label=beta];
-gamma;
-gamma -> thickness_layer2  [label=gamma];
-thickness_layer1_like;
-thickness_layer1 [shape=invtriangle];
-thickness_layer1 -> thickness_layer1_like  [label=thickness_layer1];
+beta [shape=invtriangle];
 alpha;
-alpha -> thickness_layer1  [label=alpha];
-beta -> thickness_layer1  [label=beta];
-layer_dip;
-fault_e_dip;
-fault_w_dip;
-thickness_layer2_like;
-thickness_layer2 -> thickness_layer2_like  [label=thickness_layer2];
-offset;
+alpha -> beta  [label=alpha];
+thickness_layer1;
+thickness_layer1 -> beta  [label=thickness_layer1];
+gamma [shape=invtriangle];
+beta -> gamma  [label=beta];
+thickness_layer2;
+thickness_layer2 -> gamma  [label=thickness_layer2];
 }

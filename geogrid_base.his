@@ -1,5 +1,5 @@
 #Filename = geogrid_base.his
-#Date Saved = 28/8/2015 16:32:2
+#Date Saved = 1/9/2015 14:55:45
 FileType = 111
 Version = 7.11
 
@@ -864,11 +864,11 @@ Event #4	= STRATIGRAPHY
 	Number of Views	= 1
 	Current View	= 0
 	NAME	= Default
-    Origin X    =   696094.00
-    Origin Y    =   6866608.00
+    Origin X    =   705000.00
+    Origin Y    =   6863000.00
     Origin Z    =   -9272.00
-    Length X    =   50683.00
-    Length Y    =   53467.00
+    Length X    =   42000.00
+    Length Y    =   62000.00
     Length Z    =   10272.00
 	Geology Cube Size	=  50.00
 	Geophysics Cube Size	= 100.00
